@@ -1,0 +1,48 @@
+/* ==========================================================================
+   BRAND TOKENS  (single place to change colours and fonts)
+
+   Colours were sampled from a screenshot of digilantern.com (15 Oct 2026):
+   headline ink #151346, purple #5404B9 (button start / wordmark #3B0267),
+   magenta #F1005F, orange #FF7B00, black top bar #000, hero gradient
+   white -> #BCFBF9 (aqua) -> #FFE8E9 (pink). The Elementor global styles
+   could not be fetched from this environment, so confirm the exact values
+   in digilantern.com's CSS (--e-global-color-*) and fonts, and update here.
+   Nothing else needs to change. Re-run tools/check-contrast.py afterwards.
+   ========================================================================== */
+:root {
+  /* brand */
+  --brand-primary: #151346;     /* headline ink: headings, footer */
+  --brand-secondary: #5404B9;   /* purple: links, buttons, italic accent */
+  --brand-purple-deep: #3B0267; /* wordmark purple */
+  --brand-magenta: #F1005F;
+  --brand-orange: #FF7B00;      /* decorative accents (not for text on white) */
+  --brand-accent: #FF7B00;
+  --brand-accent-ink: #5404B9;  /* accent colour safe for text on light */
+  --brand-accent-soft: #FFF0E3; /* tint for callouts */
+  --grad-brand: linear-gradient(90deg, #5404B9 0%, #F1005F 55%, #FF7B00 100%);
+  --grad-hero: linear-gradient(180deg, #FFFFFF 0%, #EAFEFD 38%, #BCFBF9 72%, #FFE8E9 100%);
+  --grad-head: linear-gradient(180deg, #FFFFFF 0%, #E4FDFC 100%);
+
+  /* surfaces and text */
+  --bg: #F8F7FC;
+  --surface: #FFFFFF;
+  --surface-2: #F0EEF8;
+  --text: #1A1940;
+  --text-muted: #4A4868;
+  --border: #E1DEEE;
+  --border-strong: #C4BFDD;
+
+  /* status colours (all AA on --surface and --bg) */
+  --c-remove: #A12117;   --c-remove-bg: #FCE9E6;
+  --c-stop: #8E3A00;     --c-stop-bg: #FDEBDD;
+  --c-rewrite: #174E9C;  --c-rewrite-bg: #E5EEFB;
+  --c-disclose: #5B2E91; --c-disclose-bg: #F0E8FA;
+  --c-verify: #14604A;   --c-verify-bg: #E1F3EC;
+  --c-interp: #7A4B00;   --c-interp-bg: #FFF3D6;
+  --c-doc: #174E9C;      --c-doc-bg: #E5EEFB;
+
+  /* type */
+  --font-display: "Source Serif 4", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+

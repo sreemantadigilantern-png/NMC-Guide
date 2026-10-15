@@ -1,0 +1,177 @@
+{
+  "siteTitle": "NMC Advertising Compliance Guide",
+  "org": "Digilantern",
+  "version": "v1.0",
+  "lastUpdated": "2026-10-15",
+  "lastUpdatedLabel": "15 Oct 2026",
+  "source": {
+    "title": "Guidelines on Ethical Advertising and Public Communication by Hospitals/Medical Institutions and Registered Medical Practitioners",
+    "ref": "No. R-13014/01/2024-Ethics",
+    "date": "06/10/2026",
+    "issuer": "National Medical Commission, Ethics & Medical Registration Board",
+    "file": "source/NMC_notice_reg_advertising.pdf"
+  },
+  "footnote": "* This is an internal working guide prepared by Digilantern from NMC Public Notice No. R-13014/01/2024-Ethics dated 06/10/2026. It is not legal advice and should be reviewed by legal counsel before being relied on. Items marked “Our interpretation” are not stated in the NMC document.",
+  "whatChanged": "On 6 October 2026 the National Medical Commission issued guidelines on how doctors and clinics may advertise and communicate with the public. They apply with immediate effect and treat websites, ads, social media, influencer content, blogs, messaging apps and AI-generated content as advertising whenever they are promotional. Testimonials, before-and-after photos, “best / No.1” claims, success rates, patient counts, endorsements and inducement-style offers are not allowed, and doctor identity details must be shown on electronic posts. The doctor carries the penalty, and using an agency does not remove that responsibility. So every deliverable we make for a healthcare client now needs a check.",
+  "channels": [
+    {
+      "id": "website",
+      "name": "Website",
+      "blurb": "Design, pages, claims and modules",
+      "tag": "Website"
+    },
+    {
+      "id": "landing",
+      "name": "Landing pages",
+      "blurb": "Campaign and lead pages",
+      "tag": "Landing"
+    },
+    {
+      "id": "google-ads",
+      "name": "Google Ads",
+      "blurb": "Keywords, copy, assets, page match",
+      "tag": "Google Ads"
+    },
+    {
+      "id": "meta-ads",
+      "name": "Meta Ads",
+      "blurb": "Facebook and Instagram ads and lead forms",
+      "tag": "Meta Ads"
+    },
+    {
+      "id": "social",
+      "name": "Social media",
+      "blurb": "Instagram, Facebook, LinkedIn, YouTube",
+      "tag": "Social"
+    },
+    {
+      "id": "video",
+      "name": "Video & reels",
+      "blurb": "Shoots, scripts and edits",
+      "tag": "Video"
+    },
+    {
+      "id": "blog",
+      "name": "Blog & articles",
+      "blurb": "Educational writing",
+      "tag": "Blog"
+    },
+    {
+      "id": "service-content",
+      "name": "Website & service-page content",
+      "blurb": "Doctor bios, treatment and device pages",
+      "tag": "Content"
+    },
+    {
+      "id": "seo-gbp",
+      "name": "SEO, GBP & reviews",
+      "blurb": "Search, Google Business Profile, ratings",
+      "tag": "SEO / GBP"
+    },
+    {
+      "id": "other",
+      "name": "Other channels",
+      "blurb": "WhatsApp, email, influencer, print, directories",
+      "tag": "Other"
+    }
+  ],
+  "departments": [
+    {
+      "id": "am",
+      "name": "Account management",
+      "short": "Accounts"
+    },
+    {
+      "id": "ppc",
+      "name": "Performance marketing",
+      "short": "Performance"
+    },
+    {
+      "id": "seo",
+      "name": "SEO",
+      "short": "SEO"
+    },
+    {
+      "id": "social",
+      "name": "Social media",
+      "short": "Social"
+    },
+    {
+      "id": "content",
+      "name": "Content",
+      "short": "Content"
+    },
+    {
+      "id": "creative",
+      "name": "Video & design",
+      "short": "Video/Design"
+    },
+    {
+      "id": "dev",
+      "name": "Web development",
+      "short": "Web dev"
+    },
+    {
+      "id": "lead",
+      "name": "Leadership",
+      "short": "Leadership"
+    }
+  ],
+  "actionTypes": [
+    {
+      "id": "remove",
+      "name": "Remove",
+      "help": "Take it down. The document prohibits it, and we have no compliant version of it."
+    },
+    {
+      "id": "stop",
+      "name": "Stop doing",
+      "help": "Stop the practice or switch the feature off."
+    },
+    {
+      "id": "rewrite",
+      "name": "Rewrite",
+      "help": "Keep the page or asset, but change the wording or design."
+    },
+    {
+      "id": "disclose",
+      "name": "Add disclosure",
+      "help": "Keep the content and add the required identity, AI or relationship details."
+    },
+    {
+      "id": "verify",
+      "name": "Verify",
+      "help": "Check evidence, status or consent first, then keep, change or remove."
+    }
+  ],
+  "doDont": {
+    "do": [
+      "Share factual clinic information: name, address, contact, departments, facilities, accreditation, fees (§8.3(i), §9.1)",
+      "Show the doctor's name, qualifications, registration status and SMR/NMR number on electronic posts (§3.2 Expl. III–IV)",
+      "Publish genuinely educational, non-promotional health information (§3.2 Expl. I, §5.1)",
+      "Describe equipment as a fact, with no superiority or outcome claim (§3.2 Expl. II)",
+      "Label AI-generated promotional content with an AI source mark (§7.2)",
+      "Get written client approval for every change (§4.4)"
+    ],
+    "dont": [
+      "No testimonials, reviews as promotion, or influencer or celebrity endorsements (§3.2 Expl. V, §8.1(xi))",
+      "No before-and-after photos, surgical results or success stories (§8.1(v))",
+      "No “best”, “No.1”, “leading”, “top” unless independently verifiable (§8.1(ix))",
+      "No success rates or patient counts; no “guaranteed”, “painless”, “miracle” (§8.1(iii))",
+      "No discounts, contests, coupons or free-procedure offers that induce care (§8.1(x))",
+      "No identifiable patient faces, names or marks, even with consent for a prohibited use (§6.2, §7.4)"
+    ]
+  },
+  "coverage": {
+    "covers": [
+      "Everything the NMC notice states, mapped clause by clause. All 12 sections of the Guidelines and the cover notice are in the clause index.",
+      "Our recommended working practice for each of our deliverable types, labelled “Our interpretation”."
+    ],
+    "limits": [
+      "The NMC document does not mention SEO, Google Ads mechanics (keywords, dynamic keyword insertion, extensions), retargeting, hashtags, review replies or review widgets. Where we give guidance on these it is our interpretation, and the grey-areas page lists them.",
+      "NMC may issue clarifications and SOPs later (§12). Check for them regularly.",
+      "State Medical Councils and State Clinical Establishments Acts may add their own rules (§4.2, §4.3). This guide does not cover them.",
+      "This guide has not been reviewed by legal counsel."
+    ]
+  }
+}

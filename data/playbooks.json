@@ -1,0 +1,344 @@
+{
+  "_note": "Channel playbooks. Item format: {t: text, c: [clause ids], b: 'doc' | 'interp'}. 'doc' means the underlying rule is stated in the NMC document. 'interp' means our recommended practice. Examples use generic wording only: no real clients or patients.",
+  "playbooks": [
+    {
+      "id": "website", "channel": "website", "name": "Website",
+      "intro": "Design, pages, claims and modules. The website is where most of the exposure sits, because ads and SEO point to it.",
+      "allowed": [
+        {"t": "Factual clinic details: name, address, contact, hours, departments, facilities, emergency services, accreditation status", "c": ["8.3(i)", "9.1"], "b": "doc"},
+        {"t": "A plain doctor directory: name, recognised qualifications, specialty, registration details, availability", "c": ["9.1"], "b": "doc"},
+        {"t": "Equipment and technology listed as fact", "c": ["3.2-E2"], "b": "doc"},
+        {"t": "Fees and consultation charges stated plainly", "c": ["8.1(x)-L", "8.2(ii)", "9.3"], "b": "doc"},
+        {"t": "Educational health information that is not promotional", "c": ["3.2-E1", "5.1"], "b": "doc"},
+        {"t": "Announcements: new clinic, new address, temporary closure", "c": ["8.2(ii)", "9.3"], "b": "doc"}
+      ],
+      "notAllowed": [
+        {"t": "Testimonial pages, sliders, quote blocks, video testimonials", "c": ["3.2-E5", "8.1(xi)", "6.2"], "b": "doc"},
+        {"t": "Before-and-after galleries and Results pages", "c": ["8.1(v)", "6.2"], "b": "doc"},
+        {"t": "“Best”, “No.1”, “leading”, “most trusted”, “top” without verification", "c": ["8.1(ix)"], "b": "doc"},
+        {"t": "Patient counters, success rates, “10,000+ patients”", "c": ["8.1(iii)"], "b": "doc"},
+        {"t": "“Guaranteed”, “painless”, “miracle”, “100% success”", "c": ["8.1(iii)"], "b": "doc"},
+        {"t": "Review widgets, star ratings and review schema", "c": ["3.2-E5", "8.1(xii)"], "b": "interp"},
+        {"t": "Discount banners, countdown timers, festival offers, pop-ups", "c": ["8.1(x)"], "b": "doc"},
+        {"t": "AI-generated people, doctors or patients", "c": ["7.2(b)"], "b": "doc"}
+      ],
+      "disclosure": [
+        {"t": "Doctor name, qualifications, registration status and SMR/NMR number", "c": ["3.2-E3", "3.2-E4"], "b": "doc"},
+        {"t": "Source mark on AI-generated promotional content", "c": ["7.2", "7.2(c)"], "b": "doc"},
+        {"t": "Awards: awarding body, year and methodology where needed to avoid misleading", "c": ["8.1(ix)-P"], "b": "doc"},
+        {"t": "Consent line and privacy link on every form", "c": ["7.6", "6.3"], "b": "interp"}
+      ],
+      "grey": [
+        {"t": "Doctor photo on the home page or hero banner", "c": ["9.2"], "b": "interp"},
+        {"t": "Media logos (“as featured in”)", "c": ["3.5", "8.1(xi)"], "b": "interp"},
+        {"t": "Years of experience", "c": ["8.1(iii)"], "b": "interp"}
+      ],
+      "examples": [
+        {"before": "“Most trusted skin clinic in the city. 10,000+ happy patients.”", "after": "“Skin clinic offering consultations in dermatology. Address, timings and contact details below.”", "why": "Removes superlative and patient count; keeps factual details.", "c": ["8.1(ix)", "8.1(iii)", "9.1"]},
+        {"before": "Menu: Home | Services | Results | Testimonials | Contact", "after": "Menu: Home | Services | Our doctors | Facilities | Contact", "why": "Results and Testimonials pages are removed and redirected.", "c": ["8.1(v)", "3.2-E5"]},
+        {"before": "Footer: “© 2026 Clinic. Dr. A, MD.”", "after": "Footer: “Dr. A, MBBS, MD (Dermatology). Registered with [State] Medical Council, Reg. No. [number].”", "why": "Adds the identity block.", "c": ["3.2-E3", "3.2-E4"]},
+        {"before": "Hero banner: “Flat 30% off this month. Book now!”", "after": "Hero banner: “Consultation fee: ₹[amount]. Call or book an appointment.”", "why": "Replaces an inducement with a factual fee.", "c": ["8.1(x)", "8.1(x)-L"]}
+      ]
+    },
+    {
+      "id": "landing", "channel": "landing", "name": "Landing pages",
+      "intro": "Campaign pages are where ads land, so any problem on the page is also a problem for the ad.",
+      "allowed": [
+        {"t": "A short factual description of the service and who provides it", "c": ["8.3(i)", "9.1"], "b": "doc"},
+        {"t": "Factual details: location, timings, contact, fees", "c": ["9.1", "8.1(x)-L"], "b": "doc"},
+        {"t": "Equipment named as a fact", "c": ["3.2-E2"], "b": "doc"},
+        {"t": "A neutral enquiry or appointment form with a privacy notice", "c": ["7.6"], "b": "interp"}
+      ],
+      "notAllowed": [
+        {"t": "Testimonials, ratings, review snippets", "c": ["3.2-E5", "8.1(xi)"], "b": "doc"},
+        {"t": "Before-and-after images or “results”", "c": ["8.1(v)"], "b": "doc"},
+        {"t": "Offers, countdowns, limited slots, free procedures", "c": ["8.1(x)"], "b": "doc"},
+        {"t": "Superlatives, comparisons, success rates, patient counts", "c": ["8.1(ix)", "8.1(iii)"], "b": "doc"},
+        {"t": "Fear-based or urgent copy", "c": ["8.1(i)"], "b": "doc"}
+      ],
+      "disclosure": [
+        {"t": "Doctor identity and registration block", "c": ["3.2-E3", "3.2-E4"], "b": "doc"},
+        {"t": "AI source mark if any AI-generated promotional content is used", "c": ["7.2"], "b": "doc"}
+      ],
+      "grey": [
+        {"t": "“Free consultation” wording", "c": ["8.1(x)"], "b": "interp"},
+        {"t": "Doctor photo on the page", "c": ["9.2"], "b": "interp"}
+      ],
+      "examples": [
+        {"before": "“Get flawless skin in 3 sessions. Guaranteed!”", "after": "“Skin treatments assessed and planned by a dermatologist. Results vary from person to person.”", "why": "Removes guarantee; adds balance.", "c": ["8.1(iii)", "8.1(vi)"]},
+        {"before": "“Only 5 slots left. Book today for a free procedure!”", "after": "“Book an appointment. Consultation fee: ₹[amount].”", "why": "Removes scarcity and free-procedure inducement.", "c": ["8.1(x)"]},
+        {"before": "“4.9★ on Google. Patients love us.”", "after": "“Clinic address, timings and facilities.”", "why": "Removes the review claim.", "c": ["3.2-E5"]}
+      ]
+    },
+    {
+      "id": "google-ads", "channel": "google-ads", "name": "Google Ads",
+      "intro": "Ads are advertisements under §3.2. Keywords, ad copy, assets and the page the ad lands on all matter.",
+      "allowed": [
+        {"t": "Factual ad copy: service, location, contact, timings, fees", "c": ["8.3(i)", "9.1"], "b": "doc"},
+        {"t": "Equipment mentioned as fact", "c": ["3.2-E2"], "b": "doc"},
+        {"t": "Location, call and callout assets that are factual", "c": ["9.1"], "b": "interp"},
+        {"t": "Landing pages that are factual and show doctor identity", "c": ["3.2-E4", "9.1"], "b": "interp"},
+        {"t": "Generic and service keywords such as “dermatologist in [city]”", "c": ["3.2"], "b": "interp"}
+      ],
+      "notAllowed": [
+        {"t": "Superlatives and comparisons in headlines and descriptions", "c": ["8.1(ix)"], "b": "doc"},
+        {"t": "Guarantees, “painless”, “permanent”, success claims", "c": ["8.1(iii)", "8.1(vi)"], "b": "doc"},
+        {"t": "Review, rating and seller-rating assets", "c": ["3.2-E5", "8.1(xi)"], "b": "interp"},
+        {"t": "Offer, promotion and price-drop assets", "c": ["8.1(x)"], "b": "doc"},
+        {"t": "Image assets or sitelinks to results, testimonials or offers", "c": ["8.1(v)", "3.2-E5"], "b": "doc"},
+        {"t": "Fear-based copy", "c": ["8.1(i)"], "b": "doc"},
+        {"t": "Dynamic keyword insertion that can insert restricted terms", "c": ["8.1(ix)", "8.1(iii)"], "b": "interp"}
+      ],
+      "disclosure": [
+        {"t": "Destination page must carry doctor identity and registration", "c": ["3.2-E4"], "b": "interp"},
+        {"t": "AI-generated creative must be marked", "c": ["7.2", "7.2(c)"], "b": "doc"}
+      ],
+      "grey": [
+        {"t": "Bidding on or using “best…” as a keyword (search term, not our claim)", "c": ["8.1(ix)"], "b": "interp"},
+        {"t": "Competitor-name keywords", "c": ["8.1(ix)"], "b": "interp"},
+        {"t": "Retargeting and customer-match lists", "c": ["7.6", "8.3(ii)"], "b": "interp"},
+        {"t": "Pay-per-lead or per-booking fee models", "c": ["8.1(viii)"], "b": "doc"}
+      ],
+      "examples": [
+        {"before": "Headline: “Best Hair Transplant Clinic in {city}”", "after": "Headline: “Hair Transplant Clinic in [City]”", "why": "Removes superlative; no dynamic insertion.", "c": ["8.1(ix)"]},
+        {"before": "Description: “10,000+ patients. 100% safe and painless. Book now!”", "after": "Description: “Consultations with a qualified dermatologist. Call to book an appointment.”", "why": "Removes patient count and absolute claims.", "c": ["8.1(iii)"]},
+        {"before": "Promotion asset: “20% off this week”", "after": "Callout: “Consultation fee shown on website”", "why": "Removes the inducement and points to factual fees.", "c": ["8.1(x)", "8.1(x)-L"]},
+        {"before": "Sitelink: “Patient Results”", "after": "Sitelink: “Our Doctors”", "why": "Removes link to prohibited content.", "c": ["8.1(v)", "9.1"]}
+      ]
+    },
+    {
+      "id": "meta-ads", "channel": "meta-ads", "name": "Meta Ads",
+      "intro": "Facebook and Instagram ads are sponsored, targeted communications and count as advertising when promotional.",
+      "allowed": [
+        {"t": "Factual awareness or educational creative with no promotion", "c": ["3.2-E1", "5.1"], "b": "doc"},
+        {"t": "Factual clinic announcements: opening, address change, new facility", "c": ["8.2(ii)", "9.3"], "b": "doc"},
+        {"t": "Neutral contact or appointment campaigns with factual copy", "c": ["9.1"], "b": "interp"}
+      ],
+      "notAllowed": [
+        {"t": "Before-and-after or results creative", "c": ["8.1(v)"], "b": "doc"},
+        {"t": "Patient faces, quotes and testimonials", "c": ["3.2-E5", "7.4"], "b": "doc"},
+        {"t": "Influencer and celebrity partnership ads", "c": ["8.1(xi)"], "b": "doc"},
+        {"t": "Offers, giveaways, contests, “limited slots”", "c": ["8.1(x)"], "b": "doc"},
+        {"t": "Fear-based hooks", "c": ["8.1(i)"], "b": "doc"},
+        {"t": "AI-generated patients, doctors or outcomes", "c": ["7.2(b)"], "b": "doc"}
+      ],
+      "disclosure": [
+        {"t": "AI source mark on AI-generated promotional content", "c": ["7.2"], "b": "doc"},
+        {"t": "Doctor identity on the destination page", "c": ["3.2-E4"], "b": "interp"}
+      ],
+      "grey": [
+        {"t": "Custom audiences from patient data", "c": ["7.6", "6.1"], "b": "interp"},
+        {"t": "Boosting educational posts", "c": ["5.1"], "b": "interp"},
+        {"t": "Platform auto-generated creative variants", "c": ["7.2", "7.2(c)"], "b": "interp"}
+      ],
+      "examples": [
+        {"before": "Image: split-screen face photos labelled “Before / After”", "after": "Image: clinic reception photo with “Appointments at [clinic], [city]”", "why": "Removes before-and-after; factual image.", "c": ["8.1(v)"]},
+        {"before": "Primary text: “Don't ignore hair fall. You'll regret it forever!”", "after": "Primary text: “Hair fall has many causes. A doctor can assess yours.”", "why": "Removes fear.", "c": ["8.1(i)"]},
+        {"before": "Lead form: “Win a free laser session!”", "after": "Lead form: “Request an appointment”", "why": "Removes contest and free procedure.", "c": ["8.1(x)"]}
+      ]
+    },
+    {
+      "id": "social", "channel": "social", "name": "Social media posts",
+      "intro": "Instagram, Facebook, LinkedIn and YouTube. Education is fine. Promotion, patients and offers are not.",
+      "allowed": [
+        {"t": "Educational posts that inform and do not promote the practice", "c": ["3.2-E1", "5.1"], "b": "doc"},
+        {"t": "Formal announcements (opening, address, absence, fees)", "c": ["8.2(ii)", "9.3"], "b": "doc"},
+        {"t": "Greetings on national or profession-related days", "c": ["8.2(v)"], "b": "doc"},
+        {"t": "Summaries of research published in reputed journals", "c": ["8.2(i)"], "b": "doc"},
+        {"t": "Factual posts about facilities and equipment", "c": ["3.2-E2", "8.3(i)"], "b": "doc"}
+      ],
+      "notAllowed": [
+        {"t": "Patient reviews, testimonials, screenshots, “patient love”", "c": ["3.2-E5"], "b": "doc"},
+        {"t": "Before-and-after posts, results, success stories", "c": ["8.1(v)"], "b": "doc"},
+        {"t": "Celebrity or influencer posts and collaborations", "c": ["8.1(xi)", "8.1(v)"], "b": "doc"},
+        {"t": "Offers, giveaways, contests", "c": ["8.1(x)"], "b": "doc"},
+        {"t": "Fake followers, likes, comments, pods", "c": ["8.1(xii)"], "b": "doc"},
+        {"t": "Identifiable patients: faces, names, chats", "c": ["7.4", "6.1"], "b": "doc"},
+        {"t": "Doctor endorsing a product or brand", "c": ["8.1(iv)"], "b": "doc"}
+      ],
+      "disclosure": [
+        {"t": "Doctor name, qualifications, registration status and number on the profile and in posts featuring the doctor", "c": ["3.2-E3", "3.2-E4"], "b": "doc"},
+        {"t": "AI source mark on AI-generated content", "c": ["7.2", "7.2(c)"], "b": "doc"},
+        {"t": "Material commercial relationship in informational posts", "c": ["8.1(xi)"], "b": "doc"}
+      ],
+      "grey": [
+        {"t": "Behind-the-scenes clinic content with staff", "c": ["8.1(xi)"], "b": "interp"},
+        {"t": "Hashtags and captions with calls to action", "c": ["3.2"], "b": "interp"},
+        {"t": "Doctor's personal social accounts", "c": ["3.2-E3", "4.4"], "b": "interp"}
+      ],
+      "examples": [
+        {"before": "“Our patient says: ‘Best clinic ever!’ ⭐⭐⭐⭐⭐”", "after": "“Common questions about acne treatment, answered by Dr. A, MD (Dermatology), Reg. No. [number].”", "why": "Removes testimonial; adds education and identity.", "c": ["3.2-E5", "3.2-E3"]},
+        {"before": "“Transformation Tuesday: 4 weeks, 4 sessions!”", "after": "“How does laser hair reduction work? A short explainer.”", "why": "Removes results; informs.", "c": ["8.1(v)", "3.2-E1"]},
+        {"before": "“Happy Diwali! Enjoy 25% off all treatments.”", "after": "“Wishing you a happy Diwali.”", "why": "Keeps the greeting; removes the offer.", "c": ["8.2(v)", "8.1(x)"]}
+      ]
+    },
+    {
+      "id": "video", "channel": "video", "name": "Video shoots and reels",
+      "intro": "Scripts, shoots and edits. Many issues are decided before the camera rolls, so this playbook is mainly for the shoot plan and the edit.",
+      "allowed": [
+        {"t": "Doctor explaining a health topic for awareness, in their own name and designation", "c": ["8.2(iii)", "5.1"], "b": "doc"},
+        {"t": "Clinic and facility walk-throughs with no patients identifiable", "c": ["8.3(i)", "7.4"], "b": "doc"},
+        {"t": "Equipment shown as fact", "c": ["3.2-E2"], "b": "doc"},
+        {"t": "Educational animations and explainers", "c": ["3.2-E1"], "b": "doc"}
+      ],
+      "notAllowed": [
+        {"t": "Patient testimonial videos and interviews", "c": ["3.2-E5", "8.1(xi)"], "b": "doc"},
+        {"t": "Before-and-after reels", "c": ["8.1(v)"], "b": "doc"},
+        {"t": "Doctor claiming “best”, “No.1”, surgery counts, “guaranteed”", "c": ["8.1(iii)", "8.1(ix)"], "b": "doc"},
+        {"t": "Staff or celebrities recommending the clinic", "c": ["8.1(xi)"], "b": "doc"},
+        {"t": "Doctor endorsing a product or brand", "c": ["8.1(iv)"], "b": "doc"},
+        {"t": "AI voice, AI avatar or AI patient", "c": ["7.2(b)"], "b": "doc"},
+        {"t": "Patients visible in frame, with names or marks", "c": ["7.4", "6.4"], "b": "doc"}
+      ],
+      "disclosure": [
+        {"t": "Doctor name, qualifications and registration number on screen or in the caption", "c": ["3.2-E3"], "b": "doc"},
+        {"t": "AI source mark on any AI-generated or materially AI-altered video", "c": ["7.2", "7.2(c)"], "b": "doc"}
+      ],
+      "grey": [
+        {"t": "Procedure footage and live demonstrations", "c": ["7.5", "6.3"], "b": "doc"},
+        {"t": "Doctor talking to camera inside the clinic (promotional or educational?)", "c": ["3.2", "3.2-E1"], "b": "interp"}
+      ],
+      "examples": [
+        {"before": "Script: “I'm the No.1 hair transplant surgeon, with 5,000 successful cases.”", "after": "Script: “Hair loss has several causes. Here is how a doctor assesses it.”", "why": "Removes claims; educates.", "c": ["8.1(iii)", "8.1(ix)"]},
+        {"before": "Shot list: patient says “Thank you doctor, I look amazing!”", "after": "Shot list: doctor explains aftercare in general terms", "why": "Removes patient endorsement.", "c": ["3.2-E5", "8.1(xi)"]},
+        {"before": "Reel: before-and-after side by side with music", "after": "Reel: 30-second explainer on how the procedure works, with risks mentioned", "why": "Replaces results with education.", "c": ["8.1(v)", "8.1(vi)"]}
+      ]
+    },
+    {
+      "id": "blog", "channel": "blog", "name": "Blog and article writing",
+      "intro": "Educational writing is the safest content we produce, if it stays educational. This playbook is about keeping it that way.",
+      "allowed": [
+        {"t": "General health information not meant to promote the practice", "c": ["3.2-E1", "5.1"], "b": "doc"},
+        {"t": "Research-based articles from journal-published work by the doctor", "c": ["8.2(i)"], "b": "doc"},
+        {"t": "Clear statements of risks and limits of treatments", "c": ["8.1(vi)"], "b": "doc"},
+        {"t": "A plain contact block", "c": ["9.1"], "b": "interp"}
+      ],
+      "notAllowed": [
+        {"t": "Patient case studies and “patient journey” stories", "c": ["8.1(v)"], "b": "doc"},
+        {"t": "Superlatives and comparisons with other clinics", "c": ["8.1(ix)"], "b": "doc"},
+        {"t": "Promises of outcomes, timelines or permanence", "c": ["8.1(iii)", "8.1(vi)"], "b": "doc"},
+        {"t": "Fear-based openings", "c": ["8.1(i)"], "b": "doc"},
+        {"t": "Product or brand recommendations by the doctor", "c": ["8.1(iv)"], "b": "doc"},
+        {"t": "Unsupported medical claims", "c": ["8.1(vi)", "7.2(a)"], "b": "doc"}
+      ],
+      "disclosure": [
+        {"t": "Author byline with name, qualifications, registration status and SMR/NMR number", "c": ["3.2-E3", "3.2-E4"], "b": "doc"},
+        {"t": "AI source mark if the article is AI-generated promotional content", "c": ["7.2", "7.2(c)"], "b": "doc"}
+      ],
+      "grey": [
+        {"t": "Heavy booking calls to action inside educational posts", "c": ["3.2-E1", "3.2"], "b": "interp"},
+        {"t": "Clinic-specific “how we do it” posts", "c": ["3.2-E2", "3.2"], "b": "interp"},
+        {"t": "AI-assisted drafting with doctor review", "c": ["7.2", "7.2(a)"], "b": "interp"}
+      ],
+      "examples": [
+        {"before": "“Why we are the best clinic for acne scars in the city.”", "after": "“Acne scars: types, treatment options and what to ask your doctor.”", "why": "Education replaces a superiority claim.", "c": ["8.1(ix)", "3.2-E1"]},
+        {"before": "“Priya's story: from scars to flawless skin in 6 weeks.”", "after": "“How long does scar treatment take? What the evidence says, and why it varies.”", "why": "Removes a patient story and a promise.", "c": ["8.1(v)", "8.1(vi)"]},
+        {"before": "“Book now before it's too late for your skin!”", "after": "“If a mole changes shape or colour, see a doctor.”", "why": "Replaces fear with clear advice.", "c": ["8.1(i)"]},
+        {"before": "By: Admin", "after": "By: Dr. A, MBBS, MD (Dermatology), Reg. No. [number] ([State] Medical Council)", "why": "Adds identity.", "c": ["3.2-E3"]}
+      ]
+    },
+    {
+      "id": "service-content", "channel": "service-content", "name": "Website and service-page content",
+      "intro": "Doctor bios, treatment pages, device pages and pricing pages. The text that sits on the site long term.",
+      "allowed": [
+        {"t": "What the treatment is, who may need it, how it is usually done", "c": ["3.2-E1", "8.1(vi)"], "b": "interp"},
+        {"t": "Equipment name and purpose as a fact", "c": ["3.2-E2"], "b": "doc"},
+        {"t": "Doctor bio: qualifications, registration, specialties, place of practice", "c": ["9.1"], "b": "doc"},
+        {"t": "Fees and packages stated plainly", "c": ["8.1(x)-L", "9.3"], "b": "doc"},
+        {"t": "Risks and limits of the treatment", "c": ["8.1(vi)"], "b": "doc"}
+      ],
+      "notAllowed": [
+        {"t": "Outcome promises, timelines, “permanent”, “guaranteed”", "c": ["8.1(iii)", "8.1(vi)"], "b": "doc"},
+        {"t": "Success rates, case counts, achievements", "c": ["8.1(iii)"], "b": "doc"},
+        {"t": "“Most advanced”, “latest”, “unmatched” device claims", "c": ["3.2-E2", "8.1(ix)"], "b": "doc"},
+        {"t": "Celebrity patient mentions", "c": ["8.1(v)"], "b": "doc"},
+        {"t": "Discount or festival price framing", "c": ["8.1(x)"], "b": "doc"},
+        {"t": "Promotional portrayal of the doctor", "c": ["8.3(ii)", "8.1(ii)"], "b": "doc"}
+      ],
+      "disclosure": [
+        {"t": "Doctor identity and registration block", "c": ["3.2-E3", "3.2-E4"], "b": "doc"},
+        {"t": "Award year, body and methodology where an award is mentioned", "c": ["8.1(ix)-P"], "b": "doc"}
+      ],
+      "grey": [
+        {"t": "“Years of experience”", "c": ["8.1(iii)"], "b": "interp"},
+        {"t": "Regulatory approval claims for devices and drugs", "c": ["8.1(vi)", "3.2-E2"], "b": "interp"},
+        {"t": "Specialty or sub-specialty labels (for example “aesthetic physician”)", "c": ["3.2-E3"], "b": "interp"}
+      ],
+      "examples": [
+        {"before": "“Dr. A is the city's top, most renowned hair transplant surgeon, with 5,000+ surgeries.”", "after": "“Dr. A, MBBS, MS, practises hair restoration surgery. Registered with [State] Medical Council, Reg. No. [number].”", "why": "Removes superlatives and count; adds identity.", "c": ["8.1(iii)", "8.1(ix)", "3.2-E3"]},
+        {"before": "“Our laser is the most advanced and 100% painless.”", "after": "“We use the [device name] laser for [purpose]. Some people feel discomfort during treatment.”", "why": "Fact and balance.", "c": ["3.2-E2", "8.1(iii)"]},
+        {"before": "“Permanent results in just 4 sessions.”", "after": "“The number of sessions depends on the person and is decided by the doctor after assessment.”", "why": "Removes promise.", "c": ["8.1(vi)"]}
+      ]
+    },
+    {
+      "id": "seo-gbp", "channel": "seo-gbp", "name": "SEO, GBP, reviews and testimonials",
+      "intro": "Search content, Google Business Profile and online reputation. The NMC text is strongest on fake and solicited reviews, and silent on most SEO mechanics.",
+      "allowed": [
+        {"t": "Factual titles and meta descriptions", "c": ["9.1", "8.3(i)"], "b": "interp"},
+        {"t": "Educational content that ranks for informational searches", "c": ["3.2-E1", "5.1"], "b": "doc"},
+        {"t": "A complete, factual GBP: name, address, hours, services, facilities, fees", "c": ["8.3(i)", "9.1"], "b": "doc"},
+        {"t": "Factual announcements on GBP: new address, temporary closure", "c": ["8.2(ii)", "9.3"], "b": "doc"},
+        {"t": "White-hat SEO: site speed, structure, quality content", "c": ["8.1(xii)"], "b": "interp"}
+      ],
+      "notAllowed": [
+        {"t": "Soliciting reviews: requests, QR codes, incentives, gating", "c": ["3.2-E5"], "b": "doc"},
+        {"t": "Buying or faking reviews, ratings, followers or engagement", "c": ["3.2-E5", "8.1(xii)"], "b": "doc"},
+        {"t": "Manipulating search rankings or visibility to mislead", "c": ["8.1(xii)"], "b": "doc"},
+        {"t": "Superlatives in titles, meta descriptions and headings", "c": ["8.1(ix)"], "b": "doc"},
+        {"t": "Offer posts on GBP", "c": ["8.1(x)"], "b": "doc"},
+        {"t": "Review and aggregateRating schema; review widgets", "c": ["3.2-E5"], "b": "interp"},
+        {"t": "Paid ranking on healthcare platforms", "c": ["9.4"], "b": "doc"}
+      ],
+      "disclosure": [
+        {"t": "Doctor identity on landing pages that rank", "c": ["3.2-E3", "3.2-E4"], "b": "doc"},
+        {"t": "Awards: body, date and methodology", "c": ["8.1(ix)-P"], "b": "doc"}
+      ],
+      "grey": [
+        {"t": "A neutral, unprompted “feedback” link", "c": ["3.2-E5"], "b": "interp"},
+        {"t": "Replying to reviews", "c": ["7.4", "6.1"], "b": "interp"},
+        {"t": "Existing organic reviews that appear in search", "c": ["3.2-E5"], "b": "interp"},
+        {"t": "Targeting “best…” search queries", "c": ["8.1(ix)"], "b": "interp"}
+      ],
+      "examples": [
+        {"before": "Title: “Best Dermatologist in [City] | No.1 Skin Clinic”", "after": "Title: “Dermatologist in [City] | [Clinic Name]”", "why": "Removes superlative claims.", "c": ["8.1(ix)"]},
+        {"before": "Front-desk script: “Please leave us a 5-star review for a free sunscreen.”", "after": "(Stop. No review requests or incentives.)", "why": "Soliciting and incentivising reviews is barred.", "c": ["3.2-E5", "8.1(x)"]},
+        {"before": "Review reply: “Thanks Ms. R! Glad your laser session worked.”", "after": "Review reply: “Thank you for your feedback. Please contact the clinic if you have any concerns.”", "why": "Does not confirm patient or treatment.", "c": ["7.4", "6.1"]},
+        {"before": "GBP post: “Monsoon offer: 40% off peels!”", "after": "GBP update: “The clinic will be closed on [date] for maintenance.”", "why": "Factual update, no offer.", "c": ["8.1(x)", "8.2(ii)"]}
+      ]
+    },
+    {
+      "id": "other", "channel": "other", "name": "Other channels",
+      "intro": "WhatsApp, email, influencer, print, hoardings, directories and PR. The notice names all of these as media of advertisement (§3.5).",
+      "allowed": [
+        {"t": "Factual WhatsApp or email updates to people who opted in (address change, timings)", "c": ["8.2(ii)", "9.3", "7.6"], "b": "interp"},
+        {"t": "Health-education pamphlets for patients visiting the clinic, with no superiority claims", "c": ["8.2(iv)"], "b": "doc"},
+        {"t": "Hoardings with factual infrastructure and facility information", "c": ["5.2"], "b": "doc"},
+        {"t": "Doctor lectures on public health in own name and designation", "c": ["8.2(iii)"], "b": "doc"},
+        {"t": "Directory listings with accurate facts, if unpaid for ranking", "c": ["9.4", "9.1"], "b": "doc"}
+      ],
+      "notAllowed": [
+        {"t": "Influencer and celebrity promotion", "c": ["8.1(xi)"], "b": "doc"},
+        {"t": "WhatsApp or email offers, results, testimonials", "c": ["3.5", "8.1(x)", "8.1(v)"], "b": "doc"},
+        {"t": "Hoardings with unverifiable claims", "c": ["5.2"], "b": "doc"},
+        {"t": "Paid ranking of doctors on platforms", "c": ["9.4"], "b": "doc"},
+        {"t": "Commissions, referral or lead-generation fees", "c": ["8.1(vii)"], "b": "doc"},
+        {"t": "Payment to agencies or influencers linked to individual patients", "c": ["8.1(viii)"], "b": "doc"},
+        {"t": "Paid news or advertorials intended for promotion", "c": ["3.5", "8.1(xi)"], "b": "doc"}
+      ],
+      "disclosure": [
+        {"t": "Material commercial relationship in informational communication", "c": ["8.1(xi)"], "b": "doc"},
+        {"t": "Doctor identity on electronic posts and mailers", "c": ["3.2-E3", "3.2-E4"], "b": "doc"}
+      ],
+      "grey": [
+        {"t": "Cost-per-lead agency models", "c": ["8.1(viii)", "8.1(vii)"], "b": "doc"},
+        {"t": "Chatbots and automated WhatsApp replies", "c": ["3.5", "7.2"], "b": "interp"},
+        {"t": "Doctor photo on printed material", "c": ["9.2"], "b": "doc"}
+      ],
+      "examples": [
+        {"before": "WhatsApp: “Diwali Dhamaka! Flat 30% off. Limited seats!”", "after": "WhatsApp: “Our clinic timings during Diwali are [dates and times].”", "why": "Factual update; no offer.", "c": ["8.1(x)", "8.2(ii)"]},
+        {"before": "Hoarding: “No.1 Skin Clinic. 25 years of trust.”", "after": "Hoarding: “[Clinic name]. Dermatology. [Address]. [Phone]”", "why": "Facts only.", "c": ["5.2", "8.1(ix)"]},
+        {"before": "Influencer reel: “I got my skin done here and I love it!”", "after": "(Stop. No influencer promotion.)", "why": "Endorsement by a third party.", "c": ["8.1(xi)"]}
+      ]
+    }
+  ]
+}
