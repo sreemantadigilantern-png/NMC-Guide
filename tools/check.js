@@ -74,13 +74,19 @@ departments.forEach((d) => {
 meta.departments.forEach((d) => { if (!departments.find((x) => x.id === d.id)) err('meta department ' + d.id + ': no view'); });
 
 grey.forEach((g) => { uniq(g.id, 'grey'); needClauses('grey ' + g.id, g.clauses); });
-going.checklist.items.forEach((i) => { uniq(i.id, 'going'); needClauses('onboarding ' + i.id, i.c); });
 going.intake.groups.forEach((g) => g.questions.forEach((q, n) => needClauses('intake ' + g.name + '[' + n + ']', q.c)));
 going.qa.lists.forEach((l) => l.items.forEach((i) => { uniq(i.id, 'qa'); needClauses('qa ' + i.id, i.c); }));
 going.workflow.steps.forEach((s) => needClauses('workflow step ' + s.n, s.c, false));
 going.contract.points.forEach((p, n) => needClauses('contract[' + n + ']', p.c));
 glossary.faq.forEach((f, n) => needClauses('faq[' + n + ']', f.c));
 glossary.glossary.forEach((g) => needClauses('glossary ' + g.term, g.c, false));
+meta.whatChanged.forEach((w, n) => needClauses('whatChanged[' + n + ']', w.c, false));
+/* legal-counsel wording belongs only in the page footnote (meta.footnote) */
+(function lint(o, path) {
+  if (typeof o === 'string') { if (/counsel|legal advice|legal review/i.test(o) && path !== 'meta.footnote') err('legal wording outside the footnote: ' + path + ' -> ' + o.slice(0, 70)); }
+  else if (Array.isArray(o)) o.forEach((v, i) => lint(v, path + '[' + i + ']'));
+  else if (o && typeof o === 'object') Object.keys(o).forEach((k) => { if (!k.startsWith('_')) lint(o[k], path + (path ? '.' : '') + k); });
+})({ meta, rules, actions, playbooks, departments, grey, going, glossary }, '');
 meta.doDont.do.concat(meta.doDont.dont).forEach((t) => { if (!/§/.test(t)) err('doDont item has no § reference: ' + t); });
 
 clauses.forEach((c) => { if (!used.has(c.id)) err('clause ' + c.id + ' (' + c.label + ') is not used anywhere'); });

@@ -31,7 +31,7 @@ nmc-guide/
 │   ├─ actions.json     Fix-now register rows
 │   ├─ playbooks.json   channel playbooks (allowed / not allowed / disclosure / grey / examples)
 │   ├─ departments.json team views
-│   ├─ going-forward.json  onboarding checklist, intake, QA checklists, workflow, contract points
+│   ├─ going-forward.json  intake questionnaire, QA checklists, workflow, contract points
 │   ├─ grey-areas.json  open questions
 │   └─ glossary.json    glossary + FAQ
 ├─ assets/css/brand.css  colours and fonts (CSS variables)

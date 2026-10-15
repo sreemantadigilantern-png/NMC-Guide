@@ -2,180 +2,643 @@
   "_note": "One entry per team. 'changes' items: {t, c: [clause ids], b: 'doc'|'interp'}. 'channels' lists playbook IDs. The fix-now page can be filtered by department with fix-now.html?dept=<id>.",
   "departments": [
     {
-      "id": "am", "name": "Account management",
+      "id": "am",
+      "name": "Account management",
       "summary": "You are the link between the client's doctor and our work. The doctor is responsible for what is published, so your job is to get approvals in writing and keep a record.",
       "start": [
-        {"t": "Get written approval from the doctor for each change and each new deliverable", "c": ["4.4", "11.5"], "b": "doc"},
-        {"t": "Collect doctor name, qualifications, registration status and SMR/NMR number, and have the client confirm them in writing", "c": ["3.2-E3", "3.2-E4"], "b": "doc"},
-        {"t": "Collect proof for every award, accreditation and device claim", "c": ["8.1(ix)-P", "8.3(i)"], "b": "doc"},
-        {"t": "Keep consent records for any patient material and ask the client to confirm what exists", "c": ["6.3"], "b": "doc"},
-        {"t": "Brief clients on the changes and what will be removed", "c": ["N1", "4.4"], "b": "interp"}
+        {
+          "t": "Get written approval from the doctor for each change and each new deliverable",
+          "c": [
+            "4.4",
+            "11.5"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Collect doctor name, qualifications, registration status and SMR/NMR number, and have the client confirm them in writing",
+          "c": [
+            "3.2-E3",
+            "3.2-E4"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Collect proof for every award, accreditation and device claim",
+          "c": [
+            "8.1(ix)-P",
+            "8.3(i)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Keep consent records for any patient material and ask the client to confirm what exists",
+          "c": [
+            "6.3"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Brief clients on the changes and what will be removed",
+          "c": [
+            "N1",
+            "4.4"
+          ],
+          "b": "interp"
+        }
       ],
       "stop": [
-        {"t": "Agreeing to client requests for testimonials, before-and-after content, offers or “best” claims", "c": ["8.1(v)", "3.2-E5", "8.1(x)", "8.1(ix)"], "b": "doc"},
-        {"t": "Starting influencer, paid-editorial or review campaigns", "c": ["8.1(xi)", "3.2-E5"], "b": "doc"}
+        {
+          "t": "Agreeing to client requests for testimonials, before-and-after content, offers or “best” claims",
+          "c": [
+            "8.1(v)",
+            "3.2-E5",
+            "8.1(x)",
+            "8.1(ix)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Starting influencer, paid-editorial or review campaigns",
+          "c": [
+            "8.1(xi)",
+            "3.2-E5"
+          ],
+          "b": "doc"
+        }
       ],
-      "daily": [
-        "Use the intake questionnaire for new clients",
-        "Send the change list by email and file the approval",
-        "Escalate grey areas to Leadership, not to the team to decide"
-      ],
-      "channels": ["website", "landing", "google-ads"]
+      "channels": [
+        "website",
+        "landing",
+        "google-ads"
+      ]
     },
     {
-      "id": "ppc", "name": "Performance marketing",
+      "id": "ppc",
+      "name": "Performance marketing",
       "summary": "Ad copy, keywords, assets, audiences and landing-page match all change. Your accounts carry the most live content.",
       "start": [
-        {"t": "Write factual ad copy: service, place, contact, fees", "c": ["8.3(i)", "9.1"], "b": "doc"},
-        {"t": "Check every destination URL before an ad goes live", "c": ["4.4", "8.1(v)"], "b": "interp"},
-        {"t": "Audit audiences and data sources and keep a consent record", "c": ["7.6", "6.1"], "b": "interp"},
-        {"t": "Review the fee model with Leadership", "c": ["8.1(viii)", "8.1(vii)"], "b": "doc"}
+        {
+          "t": "Write factual ad copy: service, place, contact, fees",
+          "c": [
+            "8.3(i)",
+            "9.1"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Check every destination URL before an ad goes live",
+          "c": [
+            "4.4",
+            "8.1(v)"
+          ],
+          "b": "interp"
+        },
+        {
+          "t": "Audit audiences and data sources and keep a consent record",
+          "c": [
+            "7.6",
+            "6.1"
+          ],
+          "b": "interp"
+        },
+        {
+          "t": "Review the fee model with Leadership",
+          "c": [
+            "8.1(viii)",
+            "8.1(vii)"
+          ],
+          "b": "doc"
+        }
       ],
       "stop": [
-        {"t": "Superlatives, guarantees, results, patient counts in ads", "c": ["8.1(ix)", "8.1(iii)"], "b": "doc"},
-        {"t": "Dynamic keyword insertion", "c": ["8.1(ix)"], "b": "interp"},
-        {"t": "Review, rating, offer, promotion and result-image assets", "c": ["3.2-E5", "8.1(x)", "8.1(v)"], "b": "doc"},
-        {"t": "Before-and-after, testimonial and influencer creative", "c": ["8.1(v)", "8.1(xi)"], "b": "doc"},
-        {"t": "Lead-gen offers, giveaways and contests", "c": ["8.1(x)"], "b": "doc"},
-        {"t": "AI-generated people and automatic generative creative", "c": ["7.2(b)", "7.2"], "b": "doc"}
+        {
+          "t": "Superlatives, guarantees, results, patient counts in ads",
+          "c": [
+            "8.1(ix)",
+            "8.1(iii)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Dynamic keyword insertion",
+          "c": [
+            "8.1(ix)"
+          ],
+          "b": "interp"
+        },
+        {
+          "t": "Review, rating, offer, promotion and result-image assets",
+          "c": [
+            "3.2-E5",
+            "8.1(x)",
+            "8.1(v)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Before-and-after, testimonial and influencer creative",
+          "c": [
+            "8.1(v)",
+            "8.1(xi)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Lead-gen offers, giveaways and contests",
+          "c": [
+            "8.1(x)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "AI-generated people and automatic generative creative",
+          "c": [
+            "7.2(b)",
+            "7.2"
+          ],
+          "b": "doc"
+        }
       ],
-      "daily": [
-        "Run the Google Ads and Meta Ads QA checklists before launch",
-        "Pause ads pointing to non-compliant pages",
-        "Get written approval on copy and creative"
-      ],
-      "channels": ["google-ads", "meta-ads", "landing"]
+      "channels": [
+        "google-ads",
+        "meta-ads",
+        "landing"
+      ]
     },
     {
-      "id": "seo", "name": "SEO",
+      "id": "seo",
+      "name": "SEO",
       "summary": "Titles, meta, local pages, GBP and anything about reviews. The NMC text is clear on reviews and silent on most SEO tactics, so use caution and escalate open questions.",
       "start": [
-        {"t": "Write factual titles and meta descriptions", "c": ["8.1(ix)", "8.1(iii)"], "b": "doc"},
-        {"t": "Keep GBP to factual details", "c": ["9.1", "8.3(i)"], "b": "interp"},
-        {"t": "Audit and drop review markup", "c": ["3.2-E5"], "b": "interp"},
-        {"t": "Audit directory and platform listings for paid ranking", "c": ["9.4"], "b": "doc"}
+        {
+          "t": "Write factual titles and meta descriptions",
+          "c": [
+            "8.1(ix)",
+            "8.1(iii)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Keep GBP to factual details",
+          "c": [
+            "9.1",
+            "8.3(i)"
+          ],
+          "b": "interp"
+        },
+        {
+          "t": "Audit and drop review markup",
+          "c": [
+            "3.2-E5"
+          ],
+          "b": "interp"
+        },
+        {
+          "t": "Audit directory and platform listings for paid ranking",
+          "c": [
+            "9.4"
+          ],
+          "b": "doc"
+        }
       ],
       "stop": [
-        {"t": "Asking for, incentivising or gating reviews", "c": ["3.2-E5"], "b": "doc"},
-        {"t": "Buying or faking reviews, followers or engagement", "c": ["8.1(xii)", "3.2-E5"], "b": "doc"},
-        {"t": "Superlatives in titles, headings and local pages", "c": ["8.1(ix)"], "b": "doc"},
-        {"t": "GBP offer posts", "c": ["8.1(x)"], "b": "doc"},
-        {"t": "Manipulating rankings or visibility in a misleading way", "c": ["8.1(xii)"], "b": "doc"}
+        {
+          "t": "Asking for, incentivising or gating reviews",
+          "c": [
+            "3.2-E5"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Buying or faking reviews, followers or engagement",
+          "c": [
+            "8.1(xii)",
+            "3.2-E5"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Superlatives in titles, headings and local pages",
+          "c": [
+            "8.1(ix)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "GBP offer posts",
+          "c": [
+            "8.1(x)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Manipulating rankings or visibility in a misleading way",
+          "c": [
+            "8.1(xii)"
+          ],
+          "b": "doc"
+        }
       ],
-      "daily": [
-        "Use the SEO/GBP QA checklist",
-        "Log every SEO question the document does not answer on the grey-areas page"
-      ],
-      "channels": ["seo-gbp", "blog", "service-content"]
+      "channels": [
+        "seo-gbp",
+        "blog",
+        "service-content"
+      ]
     },
     {
-      "id": "social", "name": "Social media",
+      "id": "social",
+      "name": "Social media",
       "summary": "Your content calendar changes the most: no reviews, results, offers or collaborations, and the doctor's details must be visible.",
       "start": [
-        {"t": "Plan calendars around education, announcements and factual facility posts", "c": ["3.2-E1", "5.1", "8.2(ii)"], "b": "doc"},
-        {"t": "Show doctor identity in the bio and on posts featuring the doctor", "c": ["3.2-E3", "3.2-E4"], "b": "doc"},
-        {"t": "Mark AI-generated content", "c": ["7.2", "7.2(c)"], "b": "doc"},
-        {"t": "Check any patient or staff in frame before posting", "c": ["7.4", "6.4"], "b": "doc"}
+        {
+          "t": "Plan calendars around education, announcements and factual facility posts",
+          "c": [
+            "3.2-E1",
+            "5.1",
+            "8.2(ii)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Show doctor identity in the bio and on posts featuring the doctor",
+          "c": [
+            "3.2-E3",
+            "3.2-E4"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Mark AI-generated content",
+          "c": [
+            "7.2",
+            "7.2(c)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Check any patient or staff in frame before posting",
+          "c": [
+            "7.4",
+            "6.4"
+          ],
+          "b": "doc"
+        }
       ],
       "stop": [
-        {"t": "Review and testimonial reposts", "c": ["3.2-E5"], "b": "doc"},
-        {"t": "Before-and-after and transformation posts", "c": ["8.1(v)"], "b": "doc"},
-        {"t": "Offers, contests, giveaways and festival discounts", "c": ["8.1(x)"], "b": "doc"},
-        {"t": "Influencer and celebrity collaborations", "c": ["8.1(xi)"], "b": "doc"},
-        {"t": "Fake followers, likes or comments", "c": ["8.1(xii)"], "b": "doc"}
+        {
+          "t": "Review and testimonial reposts",
+          "c": [
+            "3.2-E5"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Before-and-after and transformation posts",
+          "c": [
+            "8.1(v)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Offers, contests, giveaways and festival discounts",
+          "c": [
+            "8.1(x)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Influencer and celebrity collaborations",
+          "c": [
+            "8.1(xi)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Fake followers, likes or comments",
+          "c": [
+            "8.1(xii)"
+          ],
+          "b": "doc"
+        }
       ],
-      "daily": [
-        "Run the social post QA checklist before scheduling",
-        "Keep greetings plain",
-        "Do not reply to comments in a way that confirms a patient or treatment"
-      ],
-      "channels": ["social", "video"]
+      "channels": [
+        "social",
+        "video"
+      ]
     },
     {
-      "id": "content", "name": "Content",
+      "id": "content",
+      "name": "Content",
       "summary": "You write the words. Education stays, and promotion goes. Every article and page needs an accurate, doctor-checked claim and a byline.",
       "start": [
-        {"t": "Keep educational content educational and non-promotional", "c": ["3.2-E1", "5.1"], "b": "doc"},
-        {"t": "Get the doctor to confirm every medical claim, and cite sources", "c": ["8.1(vi)", "7.2(a)"], "b": "doc"},
-        {"t": "Add the doctor byline with registration details", "c": ["3.2-E3", "3.2-E4"], "b": "doc"},
-        {"t": "State risks and limits, and that results vary", "c": ["8.1(vi)"], "b": "doc"}
+        {
+          "t": "Keep educational content educational and non-promotional",
+          "c": [
+            "3.2-E1",
+            "5.1"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Get the doctor to confirm every medical claim, and cite sources",
+          "c": [
+            "8.1(vi)",
+            "7.2(a)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Add the doctor byline with registration details",
+          "c": [
+            "3.2-E3",
+            "3.2-E4"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "State risks and limits, and that results vary",
+          "c": [
+            "8.1(vi)"
+          ],
+          "b": "doc"
+        }
       ],
       "stop": [
-        {"t": "Superlatives, comparisons and patient counts", "c": ["8.1(ix)", "8.1(iii)"], "b": "doc"},
-        {"t": "Guarantees, “painless”, “permanent”, “miracle”", "c": ["8.1(iii)", "8.1(vi)"], "b": "doc"},
-        {"t": "Patient stories and case studies for promotion", "c": ["8.1(v)"], "b": "doc"},
-        {"t": "Fear-based hooks", "c": ["8.1(i)"], "b": "doc"},
-        {"t": "Publishing AI-written medical copy without doctor review", "c": ["7.2(a)"], "b": "doc"}
+        {
+          "t": "Superlatives, comparisons and patient counts",
+          "c": [
+            "8.1(ix)",
+            "8.1(iii)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Guarantees, “painless”, “permanent”, “miracle”",
+          "c": [
+            "8.1(iii)",
+            "8.1(vi)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Patient stories and case studies for promotion",
+          "c": [
+            "8.1(v)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Fear-based hooks",
+          "c": [
+            "8.1(i)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Publishing AI-written medical copy without doctor review",
+          "c": [
+            "7.2(a)"
+          ],
+          "b": "doc"
+        }
       ],
-      "daily": [
-        "Use the blog and service-page QA checklists",
-        "Do not delete educational pieces. Rewrite what is promotional."
-      ],
-      "channels": ["blog", "service-content", "website"]
+      "channels": [
+        "blog",
+        "service-content",
+        "website"
+      ]
     },
     {
-      "id": "creative", "name": "Video and design",
+      "id": "creative",
+      "name": "Video and design",
       "summary": "Shoot plans, scripts, edits and visuals change. Many problems are decided at the planning stage, so check before the shoot, not after the edit.",
       "start": [
-        {"t": "Plan shoots around the doctor explaining a topic, the clinic and its equipment", "c": ["8.2(iii)", "8.3(i)", "3.2-E2"], "b": "doc"},
-        {"t": "Blur, crop or exclude anything that identifies a patient", "c": ["7.4", "6.4"], "b": "doc"},
-        {"t": "Put the doctor's name, qualifications and registration number on screen or in the caption", "c": ["3.2-E3"], "b": "doc"},
-        {"t": "Mark AI-generated or materially AI-altered visuals", "c": ["7.2", "7.2(c)"], "b": "doc"}
+        {
+          "t": "Plan shoots around the doctor explaining a topic, the clinic and its equipment",
+          "c": [
+            "8.2(iii)",
+            "8.3(i)",
+            "3.2-E2"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Blur, crop or exclude anything that identifies a patient",
+          "c": [
+            "7.4",
+            "6.4"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Put the doctor's name, qualifications and registration number on screen or in the caption",
+          "c": [
+            "3.2-E3"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Mark AI-generated or materially AI-altered visuals",
+          "c": [
+            "7.2",
+            "7.2(c)"
+          ],
+          "b": "doc"
+        }
       ],
       "stop": [
-        {"t": "Patient testimonials and interviews", "c": ["3.2-E5", "8.1(xi)"], "b": "doc"},
-        {"t": "Before-and-after layouts, split screens, “results” templates", "c": ["8.1(v)"], "b": "doc"},
-        {"t": "Slogans with superlatives, stars or counters on creatives", "c": ["8.1(ix)", "8.1(iii)", "3.2-E5"], "b": "doc"},
-        {"t": "AI patients, AI doctor avatars, AI voices", "c": ["7.2(b)"], "b": "doc"},
-        {"t": "Doctor endorsing products on camera", "c": ["8.1(iv)"], "b": "doc"},
-        {"t": "Filming procedures for marketing until the live-surgery framework is checked", "c": ["7.5"], "b": "doc"}
+        {
+          "t": "Patient testimonials and interviews",
+          "c": [
+            "3.2-E5",
+            "8.1(xi)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Before-and-after layouts, split screens, “results” templates",
+          "c": [
+            "8.1(v)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Slogans with superlatives, stars or counters on creatives",
+          "c": [
+            "8.1(ix)",
+            "8.1(iii)",
+            "3.2-E5"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "AI patients, AI doctor avatars, AI voices",
+          "c": [
+            "7.2(b)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Doctor endorsing products on camera",
+          "c": [
+            "8.1(iv)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Filming procedures for marketing until the live-surgery framework is checked",
+          "c": [
+            "7.5"
+          ],
+          "b": "doc"
+        }
       ],
-      "daily": [
-        "Use the video and design QA checklists",
-        "Check consent and identification before a shoot day"
-      ],
-      "channels": ["video", "social", "meta-ads"]
+      "channels": [
+        "video",
+        "social",
+        "meta-ads"
+      ]
     },
     {
-      "id": "dev", "name": "Web development",
+      "id": "dev",
+      "name": "Web development",
       "summary": "Templates, modules, plugins, schema and forms. You remove modules and make structural changes, so we need a clean redirect and a clean template.",
       "start": [
-        {"t": "Add a doctor identity block as a reusable component", "c": ["3.2-E3", "3.2-E4"], "b": "doc"},
-        {"t": "Redirect removed pages to factual pages", "c": ["8.1(v)", "3.2-E5"], "b": "interp"},
-        {"t": "Add consent text and a privacy link on every form", "c": ["7.6", "6.3"], "b": "doc"},
-        {"t": "Add an AI source mark component", "c": ["7.2"], "b": "doc"}
+        {
+          "t": "Add a doctor identity block as a reusable component",
+          "c": [
+            "3.2-E3",
+            "3.2-E4"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Redirect removed pages to factual pages",
+          "c": [
+            "8.1(v)",
+            "3.2-E5"
+          ],
+          "b": "interp"
+        },
+        {
+          "t": "Add consent text and a privacy link on every form",
+          "c": [
+            "7.6",
+            "6.3"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Add an AI source mark component",
+          "c": [
+            "7.2"
+          ],
+          "b": "doc"
+        }
       ],
       "stop": [
-        {"t": "Testimonial, results, before-and-after and review modules", "c": ["3.2-E5", "8.1(v)"], "b": "doc"},
-        {"t": "Counters and stat blocks about patients or success", "c": ["8.1(iii)"], "b": "doc"},
-        {"t": "Review and AggregateRating schema", "c": ["3.2-E5", "8.1(xii)"], "b": "interp"},
-        {"t": "Offer banners, countdown timers and pop-ups", "c": ["8.1(x)"], "b": "doc"},
-        {"t": "Star-rating widgets and review sliders", "c": ["3.2-E5"], "b": "interp"}
+        {
+          "t": "Testimonial, results, before-and-after and review modules",
+          "c": [
+            "3.2-E5",
+            "8.1(v)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Counters and stat blocks about patients or success",
+          "c": [
+            "8.1(iii)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Review and AggregateRating schema",
+          "c": [
+            "3.2-E5",
+            "8.1(xii)"
+          ],
+          "b": "interp"
+        },
+        {
+          "t": "Offer banners, countdown timers and pop-ups",
+          "c": [
+            "8.1(x)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Star-rating widgets and review sliders",
+          "c": [
+            "3.2-E5"
+          ],
+          "b": "interp"
+        }
       ],
-      "daily": [
-        "Use the website QA checklist before launch",
-        "Check the template, not just the page"
-      ],
-      "channels": ["website", "landing"]
+      "channels": [
+        "website",
+        "landing"
+      ]
     },
     {
-      "id": "lead", "name": "Leadership",
-      "summary": "You decide the grey areas, review the contracts and fee models, own the legal review, and track further NMC clarifications.",
+      "id": "lead",
+      "name": "Leadership",
+      "summary": "You decide the grey areas, review contracts and fee models, and track further NMC clarifications.",
       "start": [
-        {"t": "Get legal counsel to review this guide and the grey areas", "c": ["4.2", "4.3"], "b": "interp"},
-        {"t": "Review fee models for links to individual patients", "c": ["8.1(viii)", "8.1(vii)"], "b": "doc"},
-        {"t": "Update contracts and scope of work (see Going forward)", "c": ["4.4"], "b": "interp"},
-        {"t": "Own a monthly check of NMC clarifications and State Medical Council guidance", "c": ["12"], "b": "doc"},
-        {"t": "Sign off any use of verifiable superlatives, awards or scientific cases", "c": ["8.1(ix)", "8.1(ix)-P", "8.1(v)"], "b": "doc"}
+        {
+          "t": "Review this guide and decide the open questions on the grey-areas page",
+          "c": [
+            "4.2",
+            "4.3"
+          ],
+          "b": "interp"
+        },
+        {
+          "t": "Review fee models for links to individual patients",
+          "c": [
+            "8.1(viii)",
+            "8.1(vii)"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Update contracts and scope of work (see Going forward)",
+          "c": [
+            "4.4"
+          ],
+          "b": "interp"
+        },
+        {
+          "t": "Own a monthly check of NMC clarifications and State Medical Council guidance",
+          "c": [
+            "12"
+          ],
+          "b": "doc"
+        },
+        {
+          "t": "Sign off any use of verifiable superlatives, awards or scientific cases",
+          "c": [
+            "8.1(ix)",
+            "8.1(ix)-P",
+            "8.1(v)"
+          ],
+          "b": "doc"
+        }
       ],
       "stop": [
-        {"t": "Taking on work that requires prohibited content", "c": ["8.1(v)", "3.2-E5", "8.1(xi)"], "b": "doc"}
+        {
+          "t": "Taking on work that requires prohibited content",
+          "c": [
+            "8.1(v)",
+            "3.2-E5",
+            "8.1(xi)"
+          ],
+          "b": "doc"
+        }
       ],
-      "daily": [
-        "Answer escalations from Accounts quickly",
-        "Keep this guide's version and date current"
-      ],
-      "channels": ["other"]
+      "channels": [
+        "other"
+      ]
     }
   ]
 }

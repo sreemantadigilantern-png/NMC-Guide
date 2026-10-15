@@ -1,174 +1,864 @@
 {
   "_note": "Onboarding and process content for new and future clients. Items with clauses cite the NMC document. Items with b:'interp' are our recommended practice. Checkbox IDs must stay stable because ticks are stored in the browser by ID.",
-  "checklist": {
-    "title": "New-client onboarding checklist",
-    "items": [
-      {"id": "ob-1", "t": "Confirm the client type: individual doctor, clinic or hospital, or other (wellness, diagnostics)", "c": ["3.4", "3.7"], "b": "interp"},
-      {"id": "ob-2", "t": "Identify the State Medical Council and any State Clinical Establishments Act that applies", "c": ["4.2", "4.3"], "b": "doc"},
-      {"id": "ob-3", "t": "Collect each doctor's name, qualifications, registration status and SMR/NMR number, with a copy of the certificate", "c": ["3.2-E3", "3.2-E4"], "b": "doc"},
-      {"id": "ob-4", "t": "Complete the client intake questionnaire (below)", "c": ["3.2-E3"], "b": "interp"},
-      {"id": "ob-5", "t": "Audit existing site, ads, social, GBP and listings against the Fix-now register", "c": ["N1", "4.4"], "b": "interp"},
-      {"id": "ob-6", "t": "Send the client a written list of what we will not publish and why, and get acknowledgement", "c": ["4.4"], "b": "doc"},
-      {"id": "ob-7", "t": "Agree who at the client approves content, and how (email or approval tool)", "c": ["4.4", "11.5"], "b": "doc"},
-      {"id": "ob-8", "t": "Record all awards, rankings and accreditations with proof", "c": ["8.1(ix)-P", "8.3(i)"], "b": "doc"},
-      {"id": "ob-9", "t": "Record device and equipment names, and the basis of any approval claim", "c": ["3.2-E2", "8.1(vi)"], "b": "doc"},
-      {"id": "ob-10", "t": "Check for existing patient consent records for any material we may be given", "c": ["6.1", "6.3"], "b": "doc"},
-      {"id": "ob-11", "t": "Confirm we will not run influencer, review or offer campaigns", "c": ["8.1(xi)", "3.2-E5", "8.1(x)"], "b": "doc"},
-      {"id": "ob-12", "t": "Confirm the fee model does not link payment to individual patients", "c": ["8.1(viii)", "8.1(vii)"], "b": "doc"},
-      {"id": "ob-13", "t": "Set up forms, consent text and privacy notice", "c": ["7.6"], "b": "doc"},
-      {"id": "ob-14", "t": "Set up the approval workflow and the shared record folder", "c": ["4.4"], "b": "interp"}
-    ]
-  },
   "intake": {
     "title": "Client intake questionnaire",
     "intro": "Send this to the client before any work starts. We keep the answers in the client folder.",
     "groups": [
-      {"name": "Who is publishing", "questions": [
-        {"q": "Full name of each doctor as on the register", "why": "Identity details must be shown on electronic posts.", "c": ["3.2-E3", "3.2-E4"]},
-        {"q": "Qualifications of each doctor, as recognised", "why": "Shown with the name.", "c": ["3.2-E3", "9.1"]},
-        {"q": "Registration status and SMR/NMR number, and which council", "why": "Must be disclosed. We will check against the register.", "c": ["3.2-E3", "3.2-E4"]},
-        {"q": "Legal name of the clinic or hospital, and its registration under the Clinical Establishments Act or State Act (if any)", "why": "Clinics are governed by that law.", "c": ["3.4", "4.3", "10.1-E"]},
-        {"q": "Who is the authorised person to approve content?", "why": "The doctor or clinic is responsible for what they authorise.", "c": ["4.4"]}
-      ]},
-      {"name": "What may be shown", "questions": [
-        {"q": "Which departments, facilities, emergency services and accreditations can we state, with certificates?", "why": "Factual and verifiable particulars only.", "c": ["8.3(i)", "9.1"]},
-        {"q": "Names of equipment and technology to mention, and their intended use", "why": "Allowed as fact, with no superiority claims.", "c": ["3.2-E2"]},
-        {"q": "Consultation fees and package charges to display", "why": "Fee disclosure must be factual and not misleading.", "c": ["8.1(x)-L", "8.2(ii)"]},
-        {"q": "Any awards, rankings or media features, with the awarding body, date, methodology and proof", "why": "Must be independently verifiable.", "c": ["8.1(ix)-P"]},
-        {"q": "Any journal-published research by the doctor", "why": "Research-based communication is an allowed exception.", "c": ["8.2(i)"]},
-        {"q": "Photos or videos of doctors that the client wants used, and where", "why": "Doctor photos can be a problem if promotional.", "c": ["9.2"]}
-      ]},
-      {"name": "Patients and consent", "questions": [
-        {"q": "Do you hold any patient photos, videos, reviews or stories? Where are they used today?", "why": "We need to find and remove prohibited content.", "c": ["8.1(v)", "3.2-E5", "6.1"]},
-        {"q": "For any patient material, what consent was recorded, and when?", "why": "Consent must be specific, informed, voluntary and documented, and still does not legalise prohibited uses.", "c": ["6.3", "6.2"]},
-        {"q": "Will patients appear in clinic footage?", "why": "Identifiable patients must not be shown.", "c": ["7.4", "6.4"]}
-      ]},
-      {"name": "Current marketing", "questions": [
-        {"q": "List all live websites, landing pages, ad accounts, social profiles, GBP and directory listings", "why": "We audit all of them.", "c": ["3.5"]},
-        {"q": "Any agencies, influencers, PR firms or platforms currently engaged, and how they are paid", "why": "Payment linked to patients is restricted.", "c": ["8.1(viii)", "8.1(vii)"]},
-        {"q": "Any paid ranking or featured listings on healthcare platforms", "why": "Platforms must not rank doctors for payment.", "c": ["9.4"]},
-        {"q": "Any review-request practices (QR codes, WhatsApp, front desk, incentives)?", "why": "Soliciting reviews is restricted.", "c": ["3.2-E5"]},
-        {"q": "Do you use AI tools for content, images or replies?", "why": "AI content needs a source mark and must not mislead.", "c": ["7.2", "7.2(a)", "7.2(c)"]}
-      ]},
-      {"name": "Data", "questions": [
-        {"q": "What patient or enquiry data do you want used for ads, email or WhatsApp?", "why": "Personal data must follow data-protection law.", "c": ["7.6"]},
-        {"q": "What consent and privacy notices are in place?", "why": "Consent must be documented.", "c": ["6.3", "7.6"]}
-      ]}
+      {
+        "name": "Who is publishing",
+        "questions": [
+          {
+            "q": "Full name of each doctor as on the register",
+            "why": "Identity details must be shown on electronic posts.",
+            "c": [
+              "3.2-E3",
+              "3.2-E4"
+            ]
+          },
+          {
+            "q": "Qualifications of each doctor, as recognised",
+            "why": "Shown with the name.",
+            "c": [
+              "3.2-E3",
+              "9.1"
+            ]
+          },
+          {
+            "q": "Registration status and SMR/NMR number, and which council",
+            "why": "Must be disclosed. We will check against the register.",
+            "c": [
+              "3.2-E3",
+              "3.2-E4"
+            ]
+          },
+          {
+            "q": "Legal name of the clinic or hospital, and its registration under the Clinical Establishments Act or State Act (if any)",
+            "why": "Clinics are governed by that law.",
+            "c": [
+              "3.4",
+              "4.3",
+              "10.1-E"
+            ]
+          },
+          {
+            "q": "Who is the authorised person to approve content?",
+            "why": "The doctor or clinic is responsible for what they authorise.",
+            "c": [
+              "4.4"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "What may be shown",
+        "questions": [
+          {
+            "q": "Which departments, facilities, emergency services and accreditations can we state, with certificates?",
+            "why": "Factual and verifiable particulars only.",
+            "c": [
+              "8.3(i)",
+              "9.1"
+            ]
+          },
+          {
+            "q": "Names of equipment and technology to mention, and their intended use",
+            "why": "Allowed as fact, with no superiority claims.",
+            "c": [
+              "3.2-E2"
+            ]
+          },
+          {
+            "q": "Consultation fees and package charges to display",
+            "why": "Fee disclosure must be factual and not misleading.",
+            "c": [
+              "8.1(x)-L",
+              "8.2(ii)"
+            ]
+          },
+          {
+            "q": "Any awards, rankings or media features, with the awarding body, date, methodology and proof",
+            "why": "Must be independently verifiable.",
+            "c": [
+              "8.1(ix)-P"
+            ]
+          },
+          {
+            "q": "Any journal-published research by the doctor",
+            "why": "Research-based communication is an allowed exception.",
+            "c": [
+              "8.2(i)"
+            ]
+          },
+          {
+            "q": "Photos or videos of doctors that the client wants used, and where",
+            "why": "Doctor photos can be a problem if promotional.",
+            "c": [
+              "9.2"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Patients and consent",
+        "questions": [
+          {
+            "q": "Do you hold any patient photos, videos, reviews or stories? Where are they used today?",
+            "why": "We need to find and remove prohibited content.",
+            "c": [
+              "8.1(v)",
+              "3.2-E5",
+              "6.1"
+            ]
+          },
+          {
+            "q": "For any patient material, what consent was recorded, and when?",
+            "why": "Consent must be specific, informed, voluntary and documented, and still does not legalise prohibited uses.",
+            "c": [
+              "6.3",
+              "6.2"
+            ]
+          },
+          {
+            "q": "Will patients appear in clinic footage?",
+            "why": "Identifiable patients must not be shown.",
+            "c": [
+              "7.4",
+              "6.4"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Current marketing",
+        "questions": [
+          {
+            "q": "List all live websites, landing pages, ad accounts, social profiles, GBP and directory listings",
+            "why": "We audit all of them.",
+            "c": [
+              "3.5"
+            ]
+          },
+          {
+            "q": "Any agencies, influencers, PR firms or platforms currently engaged, and how they are paid",
+            "why": "Payment linked to patients is restricted.",
+            "c": [
+              "8.1(viii)",
+              "8.1(vii)"
+            ]
+          },
+          {
+            "q": "Any paid ranking or featured listings on healthcare platforms",
+            "why": "Platforms must not rank doctors for payment.",
+            "c": [
+              "9.4"
+            ]
+          },
+          {
+            "q": "Any review-request practices (QR codes, WhatsApp, front desk, incentives)?",
+            "why": "Soliciting reviews is restricted.",
+            "c": [
+              "3.2-E5"
+            ]
+          },
+          {
+            "q": "Do you use AI tools for content, images or replies?",
+            "why": "AI content needs a source mark and must not mislead.",
+            "c": [
+              "7.2",
+              "7.2(a)",
+              "7.2(c)"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Data",
+        "questions": [
+          {
+            "q": "What patient or enquiry data do you want used for ads, email or WhatsApp?",
+            "why": "Personal data must follow data-protection law.",
+            "c": [
+              "7.6"
+            ]
+          },
+          {
+            "q": "What consent and privacy notices are in place?",
+            "why": "Consent must be documented.",
+            "c": [
+              "6.3",
+              "7.6"
+            ]
+          }
+        ]
+      }
     ]
   },
   "qa": {
     "title": "Pre-publication QA checklists",
     "intro": "Run the list for the deliverable type before anything goes to the client for approval. Tick each item. Your ticks are saved in this browser only.",
     "lists": [
-      {"id": "qa-website", "name": "Website page or template", "items": [
-        {"id": "qw-1", "t": "No testimonials, reviews, star ratings or review widgets", "c": ["3.2-E5"]},
-        {"id": "qw-2", "t": "No before-and-after, results or case-story content", "c": ["8.1(v)"]},
-        {"id": "qw-3", "t": "No “best / No.1 / leading / top / most trusted” unless verified and approved", "c": ["8.1(ix)"]},
-        {"t": "No patient counters, success rates, or “guaranteed / painless / miracle” wording", "id": "qw-4", "c": ["8.1(iii)"]},
-        {"id": "qw-5", "t": "Doctor name, qualifications, registration status and SMR/NMR number shown", "c": ["3.2-E3", "3.2-E4"]},
-        {"id": "qw-6", "t": "No offers, discount banners or countdown timers", "c": ["8.1(x)"]},
-        {"id": "qw-7", "t": "Fees, if shown, are factual", "c": ["8.1(x)-L"]},
-        {"id": "qw-8", "t": "Forms have a consent line and privacy link", "c": ["7.6"]},
-        {"id": "qw-9", "t": "No review or aggregateRating schema; titles and meta are factual", "c": ["3.2-E5", "8.1(ix)"]},
-        {"id": "qw-10", "t": "AI-generated content is marked; no AI people or voices", "c": ["7.2", "7.2(b)"]}
-      ]},
-      {"id": "qa-landing", "name": "Landing page", "items": [
-        {"id": "ql-1", "t": "Copy is factual: service, place, contact, fees", "c": ["9.1", "8.3(i)"]},
-        {"id": "ql-2", "t": "No testimonials, ratings, before-and-after", "c": ["3.2-E5", "8.1(v)"]},
-        {"id": "ql-3", "t": "No offers, scarcity, free procedures", "c": ["8.1(x)"]},
-        {"id": "ql-4", "t": "No superlatives, success rates or patient counts", "c": ["8.1(ix)", "8.1(iii)"]},
-        {"id": "ql-5", "t": "Doctor identity block present", "c": ["3.2-E4"]},
-        {"id": "ql-6", "t": "Matches the ad that sends traffic to it", "c": ["4.4"]},
-        {"id": "ql-7", "t": "Form consent and privacy notice present", "c": ["7.6"]}
-      ]},
-      {"id": "qa-google", "name": "Google Ads", "items": [
-        {"id": "qg-1", "t": "Headlines and descriptions have no superlatives, guarantees or results", "c": ["8.1(ix)", "8.1(iii)"]},
-        {"id": "qg-2", "t": "Dynamic keyword insertion is off", "c": ["8.1(ix)"]},
-        {"id": "qg-3", "t": "No review, rating, offer, promotion or result-image assets", "c": ["3.2-E5", "8.1(x)", "8.1(v)"]},
-        {"id": "qg-4", "t": "Sitelinks lead to factual pages only", "c": ["8.1(v)"]},
-        {"id": "qg-5", "t": "Destination page has passed its own QA", "c": ["4.4"]},
-        {"id": "qg-6", "t": "No fear-based copy", "c": ["8.1(i)"]},
-        {"id": "qg-7", "t": "Client approval on file for this copy", "c": ["4.4"]}
-      ]},
-      {"id": "qa-meta", "name": "Meta Ads", "items": [
-        {"id": "qm-1", "t": "No before-and-after, patient faces or quotes", "c": ["8.1(v)", "7.4", "3.2-E5"]},
-        {"id": "qm-2", "t": "No influencer, celebrity or staff endorsements", "c": ["8.1(xi)"]},
-        {"id": "qm-3", "t": "No offers, giveaways or contests; lead form is neutral", "c": ["8.1(x)"]},
-        {"id": "qm-4", "t": "No fear-based hook", "c": ["8.1(i)"]},
-        {"id": "qm-5", "t": "AI-generated creative is marked and has no synthetic people or outcomes", "c": ["7.2", "7.2(b)"]},
-        {"id": "qm-6", "t": "Audience data has a consent basis", "c": ["7.6"]},
-        {"id": "qm-7", "t": "Client approval on file", "c": ["4.4"]}
-      ]},
-      {"id": "qa-social", "name": "Social media post", "items": [
-        {"id": "qs-1", "t": "Educational or factual, not promotional", "c": ["3.2-E1", "5.1"]},
-        {"id": "qs-2", "t": "No review, testimonial or “patient love” content", "c": ["3.2-E5"]},
-        {"id": "qs-3", "t": "No before-and-after, results or success stories", "c": ["8.1(v)"]},
-        {"id": "qs-4", "t": "No offer, giveaway or contest", "c": ["8.1(x)"]},
-        {"id": "qs-5", "t": "No identifiable patient in the frame", "c": ["7.4"]},
-        {"id": "qs-6", "t": "No product or brand endorsement by the doctor", "c": ["8.1(iv)"]},
-        {"id": "qs-7", "t": "Doctor identity visible on profile or in the post", "c": ["3.2-E3"]},
-        {"id": "qs-8", "t": "AI-generated content is marked", "c": ["7.2"]}
-      ]},
-      {"id": "qa-video", "name": "Video or reel", "items": [
-        {"id": "qv-1", "t": "Script has no patient testimonial, results or claims", "c": ["3.2-E5", "8.1(v)", "8.1(iii)"]},
-        {"id": "qv-2", "t": "No patient identifiable: face, name, birth mark, chat screen", "c": ["7.4", "6.4"]},
-        {"id": "qv-3", "t": "Doctor does not say “best”, “No.1”, case counts or “guaranteed”", "c": ["8.1(ix)", "8.1(iii)"]},
-        {"id": "qv-4", "t": "No brand or product endorsement", "c": ["8.1(iv)"]},
-        {"id": "qv-5", "t": "No procedure footage unless cleared against the live-surgery framework", "c": ["7.5"]},
-        {"id": "qv-6", "t": "Doctor name, qualifications and registration number on screen or in caption", "c": ["3.2-E3"]},
-        {"id": "qv-7", "t": "No AI avatar, voice or patient; any AI use is marked", "c": ["7.2(b)", "7.2(c)"]}
-      ]},
-      {"id": "qa-blog", "name": "Blog or article", "items": [
-        {"id": "qb-1", "t": "Informs without promoting the practice", "c": ["3.2-E1", "5.1"]},
-        {"id": "qb-2", "t": "No patient stories, results, superlatives or comparisons", "c": ["8.1(v)", "8.1(ix)"]},
-        {"id": "qb-3", "t": "No guarantees, timelines or “permanent”; risks and limits stated", "c": ["8.1(vi)"]},
-        {"id": "qb-4", "t": "Medical claims checked by the doctor, with sources", "c": ["8.1(vi)", "7.2(a)"]},
-        {"id": "qb-5", "t": "Byline with doctor identity and registration", "c": ["3.2-E3"]},
-        {"id": "qb-6", "t": "No fear-based opening", "c": ["8.1(i)"]},
-        {"id": "qb-7", "t": "AI-generated content is marked", "c": ["7.2"]}
-      ]},
-      {"id": "qa-seo", "name": "SEO, GBP and reviews", "items": [
-        {"id": "qe-1", "t": "Titles, meta and headings carry no superlatives or counts", "c": ["8.1(ix)", "8.1(iii)"]},
-        {"id": "qe-2", "t": "GBP is factual; no offer posts", "c": ["9.1", "8.1(x)"]},
-        {"id": "qe-3", "t": "No review requests, incentives or gating", "c": ["3.2-E5"]},
-        {"id": "qe-4", "t": "No bought or fake reviews, followers or engagement", "c": ["8.1(xii)"]},
-        {"id": "qe-5", "t": "Review replies reveal no patient or treatment details", "c": ["7.4"]},
-        {"id": "qe-6", "t": "No paid ranking on directories", "c": ["9.4"]}
-      ]},
-      {"id": "qa-other", "name": "WhatsApp, email, print, other", "items": [
-        {"id": "qo-1", "t": "Factual only: no offers, results or testimonials", "c": ["8.1(x)", "8.1(v)", "3.2-E5"]},
-        {"id": "qo-2", "t": "Recipients opted in; privacy notice in place", "c": ["7.6"]},
-        {"id": "qo-3", "t": "Print and hoardings carry facts about facilities only", "c": ["5.2"]},
-        {"id": "qo-4", "t": "No influencer, celebrity or paid editorial", "c": ["8.1(xi)", "3.5"]},
-        {"id": "qo-5", "t": "Doctor identity details included", "c": ["3.2-E3"]}
-      ]}
+      {
+        "id": "qa-website",
+        "name": "Website page or template",
+        "items": [
+          {
+            "id": "qw-1",
+            "t": "No testimonials, reviews, star ratings or review widgets",
+            "c": [
+              "3.2-E5"
+            ]
+          },
+          {
+            "id": "qw-2",
+            "t": "No before-and-after, results or case-story content",
+            "c": [
+              "8.1(v)"
+            ]
+          },
+          {
+            "id": "qw-3",
+            "t": "No “best / No.1 / leading / top / most trusted” unless verified and approved",
+            "c": [
+              "8.1(ix)"
+            ]
+          },
+          {
+            "t": "No patient counters, success rates, or “guaranteed / painless / miracle” wording",
+            "id": "qw-4",
+            "c": [
+              "8.1(iii)"
+            ]
+          },
+          {
+            "id": "qw-5",
+            "t": "Doctor name, qualifications, registration status and SMR/NMR number shown",
+            "c": [
+              "3.2-E3",
+              "3.2-E4"
+            ]
+          },
+          {
+            "id": "qw-6",
+            "t": "No offers, discount banners or countdown timers",
+            "c": [
+              "8.1(x)"
+            ]
+          },
+          {
+            "id": "qw-7",
+            "t": "Fees, if shown, are factual",
+            "c": [
+              "8.1(x)-L"
+            ]
+          },
+          {
+            "id": "qw-8",
+            "t": "Forms have a consent line and privacy link",
+            "c": [
+              "7.6"
+            ]
+          },
+          {
+            "id": "qw-9",
+            "t": "No review or aggregateRating schema; titles and meta are factual",
+            "c": [
+              "3.2-E5",
+              "8.1(ix)"
+            ]
+          },
+          {
+            "id": "qw-10",
+            "t": "AI-generated content is marked; no AI people or voices",
+            "c": [
+              "7.2",
+              "7.2(b)"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qa-landing",
+        "name": "Landing page",
+        "items": [
+          {
+            "id": "ql-1",
+            "t": "Copy is factual: service, place, contact, fees",
+            "c": [
+              "9.1",
+              "8.3(i)"
+            ]
+          },
+          {
+            "id": "ql-2",
+            "t": "No testimonials, ratings, before-and-after",
+            "c": [
+              "3.2-E5",
+              "8.1(v)"
+            ]
+          },
+          {
+            "id": "ql-3",
+            "t": "No offers, scarcity, free procedures",
+            "c": [
+              "8.1(x)"
+            ]
+          },
+          {
+            "id": "ql-4",
+            "t": "No superlatives, success rates or patient counts",
+            "c": [
+              "8.1(ix)",
+              "8.1(iii)"
+            ]
+          },
+          {
+            "id": "ql-5",
+            "t": "Doctor identity block present",
+            "c": [
+              "3.2-E4"
+            ]
+          },
+          {
+            "id": "ql-6",
+            "t": "Matches the ad that sends traffic to it",
+            "c": [
+              "4.4"
+            ]
+          },
+          {
+            "id": "ql-7",
+            "t": "Form consent and privacy notice present",
+            "c": [
+              "7.6"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qa-google",
+        "name": "Google Ads",
+        "items": [
+          {
+            "id": "qg-1",
+            "t": "Headlines and descriptions have no superlatives, guarantees or results",
+            "c": [
+              "8.1(ix)",
+              "8.1(iii)"
+            ]
+          },
+          {
+            "id": "qg-2",
+            "t": "Dynamic keyword insertion is off",
+            "c": [
+              "8.1(ix)"
+            ]
+          },
+          {
+            "id": "qg-3",
+            "t": "No review, rating, offer, promotion or result-image assets",
+            "c": [
+              "3.2-E5",
+              "8.1(x)",
+              "8.1(v)"
+            ]
+          },
+          {
+            "id": "qg-4",
+            "t": "Sitelinks lead to factual pages only",
+            "c": [
+              "8.1(v)"
+            ]
+          },
+          {
+            "id": "qg-5",
+            "t": "Destination page has passed its own QA",
+            "c": [
+              "4.4"
+            ]
+          },
+          {
+            "id": "qg-6",
+            "t": "No fear-based copy",
+            "c": [
+              "8.1(i)"
+            ]
+          },
+          {
+            "id": "qg-7",
+            "t": "Client approval on file for this copy",
+            "c": [
+              "4.4"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qa-meta",
+        "name": "Meta Ads",
+        "items": [
+          {
+            "id": "qm-1",
+            "t": "No before-and-after, patient faces or quotes",
+            "c": [
+              "8.1(v)",
+              "7.4",
+              "3.2-E5"
+            ]
+          },
+          {
+            "id": "qm-2",
+            "t": "No influencer, celebrity or staff endorsements",
+            "c": [
+              "8.1(xi)"
+            ]
+          },
+          {
+            "id": "qm-3",
+            "t": "No offers, giveaways or contests; lead form is neutral",
+            "c": [
+              "8.1(x)"
+            ]
+          },
+          {
+            "id": "qm-4",
+            "t": "No fear-based hook",
+            "c": [
+              "8.1(i)"
+            ]
+          },
+          {
+            "id": "qm-5",
+            "t": "AI-generated creative is marked and has no synthetic people or outcomes",
+            "c": [
+              "7.2",
+              "7.2(b)"
+            ]
+          },
+          {
+            "id": "qm-6",
+            "t": "Audience data has a consent basis",
+            "c": [
+              "7.6"
+            ]
+          },
+          {
+            "id": "qm-7",
+            "t": "Client approval on file",
+            "c": [
+              "4.4"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qa-social",
+        "name": "Social media post",
+        "items": [
+          {
+            "id": "qs-1",
+            "t": "Educational or factual, not promotional",
+            "c": [
+              "3.2-E1",
+              "5.1"
+            ]
+          },
+          {
+            "id": "qs-2",
+            "t": "No review, testimonial or “patient love” content",
+            "c": [
+              "3.2-E5"
+            ]
+          },
+          {
+            "id": "qs-3",
+            "t": "No before-and-after, results or success stories",
+            "c": [
+              "8.1(v)"
+            ]
+          },
+          {
+            "id": "qs-4",
+            "t": "No offer, giveaway or contest",
+            "c": [
+              "8.1(x)"
+            ]
+          },
+          {
+            "id": "qs-5",
+            "t": "No identifiable patient in the frame",
+            "c": [
+              "7.4"
+            ]
+          },
+          {
+            "id": "qs-6",
+            "t": "No product or brand endorsement by the doctor",
+            "c": [
+              "8.1(iv)"
+            ]
+          },
+          {
+            "id": "qs-7",
+            "t": "Doctor identity visible on profile or in the post",
+            "c": [
+              "3.2-E3"
+            ]
+          },
+          {
+            "id": "qs-8",
+            "t": "AI-generated content is marked",
+            "c": [
+              "7.2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qa-video",
+        "name": "Video or reel",
+        "items": [
+          {
+            "id": "qv-1",
+            "t": "Script has no patient testimonial, results or claims",
+            "c": [
+              "3.2-E5",
+              "8.1(v)",
+              "8.1(iii)"
+            ]
+          },
+          {
+            "id": "qv-2",
+            "t": "No patient identifiable: face, name, birth mark, chat screen",
+            "c": [
+              "7.4",
+              "6.4"
+            ]
+          },
+          {
+            "id": "qv-3",
+            "t": "Doctor does not say “best”, “No.1”, case counts or “guaranteed”",
+            "c": [
+              "8.1(ix)",
+              "8.1(iii)"
+            ]
+          },
+          {
+            "id": "qv-4",
+            "t": "No brand or product endorsement",
+            "c": [
+              "8.1(iv)"
+            ]
+          },
+          {
+            "id": "qv-5",
+            "t": "No procedure footage unless cleared against the live-surgery framework",
+            "c": [
+              "7.5"
+            ]
+          },
+          {
+            "id": "qv-6",
+            "t": "Doctor name, qualifications and registration number on screen or in caption",
+            "c": [
+              "3.2-E3"
+            ]
+          },
+          {
+            "id": "qv-7",
+            "t": "No AI avatar, voice or patient; any AI use is marked",
+            "c": [
+              "7.2(b)",
+              "7.2(c)"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qa-blog",
+        "name": "Blog or article",
+        "items": [
+          {
+            "id": "qb-1",
+            "t": "Informs without promoting the practice",
+            "c": [
+              "3.2-E1",
+              "5.1"
+            ]
+          },
+          {
+            "id": "qb-2",
+            "t": "No patient stories, results, superlatives or comparisons",
+            "c": [
+              "8.1(v)",
+              "8.1(ix)"
+            ]
+          },
+          {
+            "id": "qb-3",
+            "t": "No guarantees, timelines or “permanent”; risks and limits stated",
+            "c": [
+              "8.1(vi)"
+            ]
+          },
+          {
+            "id": "qb-4",
+            "t": "Medical claims checked by the doctor, with sources",
+            "c": [
+              "8.1(vi)",
+              "7.2(a)"
+            ]
+          },
+          {
+            "id": "qb-5",
+            "t": "Byline with doctor identity and registration",
+            "c": [
+              "3.2-E3"
+            ]
+          },
+          {
+            "id": "qb-6",
+            "t": "No fear-based opening",
+            "c": [
+              "8.1(i)"
+            ]
+          },
+          {
+            "id": "qb-7",
+            "t": "AI-generated content is marked",
+            "c": [
+              "7.2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qa-seo",
+        "name": "SEO, GBP and reviews",
+        "items": [
+          {
+            "id": "qe-1",
+            "t": "Titles, meta and headings carry no superlatives or counts",
+            "c": [
+              "8.1(ix)",
+              "8.1(iii)"
+            ]
+          },
+          {
+            "id": "qe-2",
+            "t": "GBP is factual; no offer posts",
+            "c": [
+              "9.1",
+              "8.1(x)"
+            ]
+          },
+          {
+            "id": "qe-3",
+            "t": "No review requests, incentives or gating",
+            "c": [
+              "3.2-E5"
+            ]
+          },
+          {
+            "id": "qe-4",
+            "t": "No bought or fake reviews, followers or engagement",
+            "c": [
+              "8.1(xii)"
+            ]
+          },
+          {
+            "id": "qe-5",
+            "t": "Review replies reveal no patient or treatment details",
+            "c": [
+              "7.4"
+            ]
+          },
+          {
+            "id": "qe-6",
+            "t": "No paid ranking on directories",
+            "c": [
+              "9.4"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qa-other",
+        "name": "WhatsApp, email, print, other",
+        "items": [
+          {
+            "id": "qo-1",
+            "t": "Factual only: no offers, results or testimonials",
+            "c": [
+              "8.1(x)",
+              "8.1(v)",
+              "3.2-E5"
+            ]
+          },
+          {
+            "id": "qo-2",
+            "t": "Recipients opted in; privacy notice in place",
+            "c": [
+              "7.6"
+            ]
+          },
+          {
+            "id": "qo-3",
+            "t": "Print and hoardings carry facts about facilities only",
+            "c": [
+              "5.2"
+            ]
+          },
+          {
+            "id": "qo-4",
+            "t": "No influencer, celebrity or paid editorial",
+            "c": [
+              "8.1(xi)",
+              "3.5"
+            ]
+          },
+          {
+            "id": "qo-5",
+            "t": "Doctor identity details included",
+            "c": [
+              "3.2-E3"
+            ]
+          }
+        ]
+      }
     ]
   },
   "workflow": {
     "title": "Suggested approval workflow",
     "intro": "Our suggestion for who checks what before anything goes live. This is our recommended practice, not something the NMC document sets out.",
     "steps": [
-      {"n": 1, "who": "Creator", "what": "Makes the deliverable and runs the QA checklist for that type", "c": []},
-      {"n": 2, "who": "Department lead", "what": "Peer-checks the deliverable against the checklist and the playbook", "c": []},
-      {"n": 3, "who": "Account manager", "what": "Checks identity details, proofs for claims, consent records and that the client's approver is right", "c": ["3.2-E3", "8.1(ix)-P", "6.3"]},
-      {"n": 4, "who": "Client (the doctor or authorised person)", "what": "Approves in writing. This is the record that the client authorised the content", "c": ["4.4", "11.5"]},
-      {"n": 5, "who": "Leadership (only for flagged items)", "what": "Decides grey-area items: verifiable superlatives, awards, scientific cases, free consultations, doctor photos, fee models", "c": ["8.1(ix)", "8.1(v)", "9.2", "8.1(viii)"]},
-      {"n": 6, "who": "Creator or developer", "what": "Publishes. Files the approval and the QA checklist in the client folder", "c": []}
+      {
+        "n": 1,
+        "who": "Creator",
+        "what": "Makes the deliverable and runs the QA checklist for that type",
+        "c": []
+      },
+      {
+        "n": 2,
+        "who": "Department lead",
+        "what": "Peer-checks the deliverable against the checklist and the playbook",
+        "c": []
+      },
+      {
+        "n": 3,
+        "who": "Account manager",
+        "what": "Checks identity details, proofs for claims, consent records and that the client's approver is right",
+        "c": [
+          "3.2-E3",
+          "8.1(ix)-P",
+          "6.3"
+        ]
+      },
+      {
+        "n": 4,
+        "who": "Client (the doctor or authorised person)",
+        "what": "Approves in writing. This is the record that the client authorised the content",
+        "c": [
+          "4.4",
+          "11.5"
+        ]
+      },
+      {
+        "n": 5,
+        "who": "Leadership (only for flagged items)",
+        "what": "Decides grey-area items: verifiable superlatives, awards, scientific cases, free consultations, doctor photos, fee models",
+        "c": [
+          "8.1(ix)",
+          "8.1(v)",
+          "9.2",
+          "8.1(viii)"
+        ]
+      },
+      {
+        "n": 6,
+        "who": "Creator or developer",
+        "what": "Publishes. Files the approval and the QA checklist in the client folder",
+        "c": []
+      }
     ]
   },
   "contract": {
     "title": "Contract and scope-of-work points to discuss with leadership",
-    "intro": "These are discussion points for Leadership and legal counsel, not drafted clauses. All of them are our suggestions.",
+    "intro": "Discussion points for Leadership, not drafted clauses. All of them are our suggestions.",
     "points": [
-      {"t": "Client responsibility for content: state that the client (doctor or clinic) approves all content and is responsible for the accuracy of claims, registration details and consents they supply", "c": ["4.4"], "b": "doc"},
-      {"t": "Right to refuse: we may decline or pause work that would breach the NMC Guidelines or other applicable law, without it being a breach of contract", "c": ["2.2", "4.4"], "b": "interp"},
-      {"t": "Written approval: no deliverable goes live without written approval; the approval log is kept", "c": ["4.4", "11.5"], "b": "interp"},
-      {"t": "Out of scope: testimonials, review campaigns, before-and-after, influencer work, offer campaigns and AI-generated people, listed as outside scope", "c": ["3.2-E5", "8.1(v)", "8.1(xi)", "8.1(x)", "7.2(b)"], "b": "doc"},
-      {"t": "Fee structure: review any fee linked to leads, bookings or patients, and take legal advice on whether to restructure", "c": ["8.1(viii)", "8.1(vii)"], "b": "doc"},
-      {"t": "Information from the client: the client supplies registration numbers, qualifications, proofs for awards and accreditations, and consent records", "c": ["3.2-E3", "8.1(ix)-P", "6.3"], "b": "doc"},
-      {"t": "Data protection: roles and responsibilities for personal data used in forms, ads and messaging", "c": ["7.6"], "b": "doc"},
-      {"t": "Regulatory change: how we handle new NMC clarifications and State Council rules, and who pays for resulting rework", "c": ["12", "4.2"], "b": "doc"},
-      {"t": "Takedown: we may remove content at any time if we believe it breaches the Guidelines", "c": ["N1", "4.4"], "b": "interp"}
+      {
+        "t": "Client responsibility for content: state that the client (doctor or clinic) approves all content and is responsible for the accuracy of claims, registration details and consents they supply",
+        "c": [
+          "4.4"
+        ],
+        "b": "doc"
+      },
+      {
+        "t": "Right to refuse: we may decline or pause work that would breach the NMC Guidelines or other applicable law, without it being a breach of contract",
+        "c": [
+          "2.2",
+          "4.4"
+        ],
+        "b": "interp"
+      },
+      {
+        "t": "Written approval: no deliverable goes live without written approval; the approval log is kept",
+        "c": [
+          "4.4",
+          "11.5"
+        ],
+        "b": "interp"
+      },
+      {
+        "t": "Out of scope: testimonials, review campaigns, before-and-after, influencer work, offer campaigns and AI-generated people, listed as outside scope",
+        "c": [
+          "3.2-E5",
+          "8.1(v)",
+          "8.1(xi)",
+          "8.1(x)",
+          "7.2(b)"
+        ],
+        "b": "doc"
+      },
+      {
+        "t": "Fee structure: review any fee linked to leads, bookings or patients, and decide whether to restructure",
+        "c": [
+          "8.1(viii)",
+          "8.1(vii)"
+        ],
+        "b": "doc"
+      },
+      {
+        "t": "Information from the client: the client supplies registration numbers, qualifications, proofs for awards and accreditations, and consent records",
+        "c": [
+          "3.2-E3",
+          "8.1(ix)-P",
+          "6.3"
+        ],
+        "b": "doc"
+      },
+      {
+        "t": "Data protection: roles and responsibilities for personal data used in forms, ads and messaging",
+        "c": [
+          "7.6"
+        ],
+        "b": "doc"
+      },
+      {
+        "t": "Regulatory change: how we handle new NMC clarifications and State Council rules, and who pays for resulting rework",
+        "c": [
+          "12",
+          "4.2"
+        ],
+        "b": "doc"
+      },
+      {
+        "t": "Takedown: we may remove content at any time if we believe it breaches the Guidelines",
+        "c": [
+          "N1",
+          "4.4"
+        ],
+        "b": "interp"
+      }
     ]
   }
 }

@@ -11,8 +11,52 @@
     "issuer": "National Medical Commission, Ethics & Medical Registration Board",
     "file": "source/NMC_notice_reg_advertising.pdf"
   },
-  "footnote": "* This is an internal working guide prepared by Digilantern from NMC Public Notice No. R-13014/01/2024-Ethics dated 06/10/2026. It is not legal advice and should be reviewed by legal counsel before being relied on. Items marked “Our interpretation” are not stated in the NMC document.",
-  "whatChanged": "On 6 October 2026 the National Medical Commission issued guidelines on how doctors and clinics may advertise and communicate with the public. They apply with immediate effect and treat websites, ads, social media, influencer content, blogs, messaging apps and AI-generated content as advertising whenever they are promotional. Testimonials, before-and-after photos, “best / No.1” claims, success rates, patient counts, endorsements and inducement-style offers are not allowed, and doctor identity details must be shown on electronic posts. The doctor carries the penalty, and using an agency does not remove that responsibility. So every deliverable we make for a healthcare client now needs a check.",
+  "footnote": "* Internal working guide prepared by Digilantern from NMC Public Notice No. R-13014/01/2024-Ethics dated 06/10/2026. It is not legal advice. Items marked “Our interpretation” are not stated in the NMC document. Please have legal counsel review this guide before relying on it.",
+  "whatChanged": [
+    {
+      "t": "On 6 October 2026 NMC issued guidelines on advertising and public communication by doctors and clinics. They apply immediately.",
+      "c": [
+        "N1",
+        "1.2"
+      ]
+    },
+    {
+      "t": "Websites, ads, social media, influencer content, blogs, WhatsApp and AI content count as advertising whenever they are promotional.",
+      "c": [
+        "3.2",
+        "3.5"
+      ]
+    },
+    {
+      "t": "Not allowed: testimonials, before-and-after photos, “best / No.1” claims, success rates, patient counts, endorsements, and inducement-style offers.",
+      "c": [
+        "3.2-E5",
+        "8.1(v)",
+        "8.1(ix)",
+        "8.1(iii)",
+        "8.1(xi)",
+        "8.1(x)"
+      ]
+    },
+    {
+      "t": "Doctor name, qualifications and registration number must show on electronic posts.",
+      "c": [
+        "3.2-E3",
+        "3.2-E4"
+      ]
+    },
+    {
+      "t": "The penalty falls on the doctor, and using an agency does not remove that responsibility.",
+      "c": [
+        "10.1",
+        "4.4"
+      ]
+    },
+    {
+      "t": "So every deliverable for a healthcare client now needs a check.",
+      "c": []
+    }
+  ],
   "channels": [
     {
       "id": "website",
@@ -170,8 +214,7 @@
     "limits": [
       "The NMC document does not mention SEO, Google Ads mechanics (keywords, dynamic keyword insertion, extensions), retargeting, hashtags, review replies or review widgets. Where we give guidance on these it is our interpretation, and the grey-areas page lists them.",
       "NMC may issue clarifications and SOPs later (§12). Check for them regularly.",
-      "State Medical Councils and State Clinical Establishments Acts may add their own rules (§4.2, §4.3). This guide does not cover them.",
-      "This guide has not been reviewed by legal counsel."
+      "State Medical Councils and State Clinical Establishments Acts may add their own rules (§4.2, §4.3). This guide does not cover them."
     ]
   }
 }

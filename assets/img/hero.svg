@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 440" role="img" aria-label="A clinic web page with a doctor profile showing a registration number, protected by a shield">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5404B9"/><stop offset="1" stop-color="#F1005F"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EFE8FB"/><stop offset="1" stop-color="#FFE8E9"/></linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#151346" flood-opacity=".14"/></filter>
+  </defs>
+  <circle cx="270" cy="220" r="200" fill="url(#g2)"/>
+  <circle cx="470" cy="70" r="34" fill="#FF7B00" opacity=".18"/>
+  <circle cx="40" cy="380" r="26" fill="#5404B9" opacity=".12"/>
+  <!-- browser card -->
+  <g filter="url(#sh)">
+    <rect x="56" y="78" width="340" height="270" rx="16" fill="#fff" stroke="#E1DEEE"/>
+    <path d="M56 94a16 16 0 0 1 16-16h308a16 16 0 0 1 16 16v22H56z" fill="#F0EEF8"/>
+    <circle cx="78" cy="97" r="5" fill="#F1005F"/><circle cx="96" cy="97" r="5" fill="#FF7B00"/><circle cx="114" cy="97" r="5" fill="#14604A"/>
+    <rect x="140" y="89" width="200" height="16" rx="8" fill="#fff" stroke="#E1DEEE"/>
+  </g>
+  <rect x="80" y="136" width="170" height="14" rx="7" fill="#151346"/>
+  <rect x="80" y="160" width="250" height="8" rx="4" fill="#C4BFDD"/>
+  <rect x="80" y="176" width="210" height="8" rx="4" fill="#C4BFDD"/>
+  <!-- doctor profile -->
+  <rect x="80" y="204" width="296" height="108" rx="12" fill="#F8F7FC" stroke="#E1DEEE"/>
+  <circle cx="124" cy="258" r="30" fill="#EFE8FB"/>
+  <circle cx="124" cy="248" r="11" fill="#5404B9"/>
+  <path d="M100 282a24 20 0 0 1 48 0z" fill="#5404B9"/>
+  <path d="M116 270v10a8 8 0 0 0 16 0v-10" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <rect x="168" y="228" width="120" height="12" rx="6" fill="#151346"/>
+  <rect x="168" y="248" width="90" height="8" rx="4" fill="#C4BFDD"/>
+  <rect x="168" y="268" width="150" height="24" rx="12" fill="#E1F3EC"/>
+  <path d="M180 280l4 4 8-9" stroke="#14604A" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="198" y="285" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#14604A">Reg. No. shown</text>
+  <!-- shield -->
+  <g filter="url(#sh)">
+    <path d="M388 196l66 24v54c0 44-28 76-66 92-38-16-66-48-66-92v-54z" fill="url(#g1)"/>
+  </g>
+  <path d="M358 282l22 22 42-46" stroke="#fff" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- chips -->
+  <g font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="700">
+    <rect x="296" y="30" width="148" height="32" rx="16" fill="#FCE9E6"/><text x="312" y="51" fill="#A12117">✕  Testimonials</text>
+    <rect x="344" y="132" width="150" height="32" rx="16" fill="#FCE9E6"/><text x="360" y="153" fill="#A12117">✕  Before / after</text>
+    <rect x="30" y="368" width="150" height="32" rx="16" fill="#E1F3EC"/><text x="46" y="389" fill="#14604A">✓  Factual info</text>
+    <rect x="196" y="384" width="168" height="32" rx="16" fill="#E1F3EC"/><text x="212" y="405" fill="#14604A">✓  Educational posts</text>
+  </g>
+</svg>
